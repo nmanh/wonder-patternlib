@@ -1,0 +1,36 @@
+.rope {
+  position: relative;
+
+  img { /* stylelint-disable-line */
+    display: block;
+    margin-bottom: $space-sm;
+  }
+
+  &__content-truncate {
+    display: -webkit-box; /* stylelint-disable-line */
+    max-height: ($line-height-base * 5rem - 0.1rem);
+    overflow: hidden;
+
+    line-height: $line-height-base;
+    // text-overflow: ellipsis;
+    -webkit-box-orient: vertical; /* stylelint-disable-line */
+    -webkit-line-clamp: 5; /* stylelint-disable-line */
+
+    > * { /* stylelint-disable-line */
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    padding: 0 0 0 $space-xs;
+
+    background-color: $white;
+    border: 0;
+    box-shadow: -$base 0 $base rgba($white, 0.85);
+  }
+}

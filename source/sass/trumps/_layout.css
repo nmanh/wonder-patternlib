@@ -1,0 +1,35 @@
+/* Flex layout */
+
+.lf {
+  display: flex;
+  // flex-wrap: wrap;
+
+  &_full-space {
+    flex-grow: 1;
+  }
+
+  &_align-middle {
+    align-items: center;
+  }
+
+  // &_no-wrap {
+  //   flex-wrap: nowrap;
+  // }
+
+  &_wrap {
+    flex-wrap: wrap;
+  }
+
+  /* no grow and shrink */
+
+  &_no-gas {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+
+/* Clearfix */
+
+.clearfix {
+  clear: fix;
+}

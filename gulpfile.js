@@ -7,7 +7,72 @@ var gulp = require('gulp'),
   path = require('path'),
   browserSync = require('browser-sync').create(),
   argv = require('minimist')(process.argv.slice(2)),
-  chalk = require('chalk');
+  chalk = require('chalk'),
+  gulpLoadPlugins = require('gulp-load-plugins');
+
+var $ = gulpLoadPlugins();
+var dev = true;
+
+// Custom tasks
+gulp.task('styles', () => {
+  const
+    assets      = require('postcss-assets'),
+    pxtorem     = require('postcss-pxtorem'),
+    at2x        = require('postcss-at2x'),
+    customMedia = require('postcss-custom-media'),
+    shortSize   = require('postcss-short-size'),
+    rucksack    = require('rucksack-css'),
+    animation   = require('postcss-animation'),
+    triangle    = require('postcss-triangle'),
+    processors  = [
+      pxtorem({
+        rootValue: 14,
+        replace: true,
+        propWhiteList: [],
+        selectorBlackList: [/^html$/],
+      }),
+      assets({
+        loadPaths: ['images/'],
+        basePath: 'source',
+        relative: true,
+        cachebuster: true
+      }),
+      shortSize,
+      rucksack(),
+      triangle(),
+      customMedia,
+      at2x,
+      animation(),
+    ];
+
+  return gulp.src('source/sass/*.css')
+    .pipe($.plumber())
+    .pipe($.if(dev, $.sourcemaps.init()))
+    .pipe($.sass.sync({
+      outputStyle: 'expanded',
+      precision: 10,
+      includePaths: ['.']
+    }).on('error', $.sass.logError))
+    .pipe($.postcss(processors))
+    .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
+    .pipe($.if(dev, $.sourcemaps.write('.')))
+    .pipe(gulp.dest('source/css'));
+});
+
+gulp.task('stylelint', () => {
+  return gulp.src('source/sass/**/*.css')
+    .pipe($.plumber())
+    .pipe($.stylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ],
+      syntax: 'scss'
+    }))
+})
+gulp.task('watch:stylelint', () => {
+  gulp.watch('source/sass/**/*.css', gulp.series('stylelint'))
+})
+// End custom tasks
 
 /**
  * Normalize all paths to be plain, paths with no leading './',
@@ -196,6 +261,18 @@ function watch() {
       tasks: gulp.series('pl-copy:css', reloadCSS)
     },
     {
+      name: 'SASS',
+      paths: [normalizePath(paths().source.sass, '**', '*.css')],
+      config: { awaitWriteFinish: true },
+      tasks: gulp.parallel('styles', 'stylelint')
+    },
+    {
+      name: 'JS',
+      paths: [normalizePath(paths().source.js, '**', '*.js')],
+      config: { awaitWriteFinish: true },
+      tasks: gulp.series('pl-copy:js')
+    },
+    {
       name: 'Styleguide Files',
       paths: [normalizePath(paths().source.styleguide, '**', '*')],
       config: { awaitWriteFinish: true },
@@ -263,4 +340,4 @@ gulp.task('patternlab:connect', gulp.series(function (done) {
 ******************************************************/
 gulp.task('default', gulp.series('patternlab:build'));
 gulp.task('patternlab:watch', gulp.series('patternlab:build', watch));
-gulp.task('patternlab:serve', gulp.series('patternlab:build', 'patternlab:connect', watch));
+gulp.task('patternlab:serve', gulp.series('styles', 'patternlab:build', 'patternlab:connect', watch));

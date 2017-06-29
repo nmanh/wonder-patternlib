@@ -1,0 +1,18 @@
+/* stylelint-disable */
+
+.Select-control {
+  border-radius: $radius !important;
+
+  border: 1px solid $border-color !important;
+
+  &:focus {
+    border-color: $color-info;
+    outline: 0;
+
+    @include box-shadow;
+  }
+}
+
+.Select-placeholder {
+  color: #757575 !important;
+}

@@ -1,0 +1,32 @@
+.shadow {
+  box-shadow: $space-xs $space-xs $space-xs rgba($body-color, 0.4);
+}
+
+.hover {
+  transition: background-color $transition-time $transition-effect;
+
+  &:hover {
+    background-color: $alabaster;
+  }
+}
+
+.d-ib {
+  display: inline-block;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.pos {
+  position: relative;
+
+  &__item {
+    position: absolute;
+
+    &_rb {
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

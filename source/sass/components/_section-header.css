@@ -1,0 +1,13 @@
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: $space-md;
+
+  &__text {
+    margin-bottom: 0;
+
+    font-size: $font-size-h3;
+  }
+}

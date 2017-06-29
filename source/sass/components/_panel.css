@@ -1,0 +1,72 @@
+.panel {
+  background-color: $white;
+  border-radius: $radius;
+
+  @include border($border-color);
+
+  &__body {
+    padding: $space-md;
+  }
+
+  &__heading,
+  &__footer {
+    padding: $space-sm $space-md;
+
+    background-color: $border-color;
+  }
+
+  &__title {
+    margin-bottom: 0;
+
+    font-weight: $font-weight-normal;
+  }
+
+  &__footer {
+    border-radius: 0 0 $radius $radius;
+  }
+
+  // panel special need difference look
+
+  &_special {
+    background-color: $alabaster;
+
+    @include border($alabaster);
+
+    .panel__heading {
+      text-transform: uppercase;
+
+      background-color: transparent;
+      border-bottom: 2px solid darken($alabaster, 10%);
+    }
+  }
+
+  &_special-border {
+    background-color: $alabaster;
+
+    @include border($border-color);
+
+    .panel__heading {
+      text-transform: uppercase;
+
+      background-color: transparent;
+      border-bottom: 2px solid darken($alabaster, 10%);
+    }
+  }
+}
+
+@each $type, $color in (
+  primary: $color-primary,
+  success: $color-success,
+  info: $color-info,
+  warning: $color-warning,
+  danger: $color-danger
+) {
+
+  .panel_#{$type} {
+    @include border($color);
+
+    .panel__heading {
+      background-color: $color;
+    }
+  }
+}

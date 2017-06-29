@@ -1,0 +1,11 @@
+.img-circle {
+  border-radius: 50%;
+}
+
+.img-rounded {
+  border-radius: $radius;
+}
+
+.img-full-width {
+  width: 100%;
+}

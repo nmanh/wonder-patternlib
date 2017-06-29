@@ -1,0 +1,46 @@
+.switch {
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+
+    &:checked ~ .switch__paddle {
+      background-color: $color-success;
+
+      &::after {
+        transform: translateX(100%);
+      }
+    }
+
+    &[disabled] ~ .switch__paddle {
+      cursor: not-allowed;
+      opacity: $opacity;
+    }
+  }
+
+  &__paddle {
+    display: inline-block;
+    size: $space-xxlg $space-xlg;
+    margin-bottom: 0;
+
+    cursor: pointer;
+    background-color: $muted;
+    border-radius: $radius-big;
+    box-shadow: inset 1px 1px 1px 1px rgba($body-color, 0.4);
+
+    transition: background-color $transition-time $transition-effect;
+
+    &::after {
+      position: relative;
+      display: block;
+      size: $space-lg;
+      content: "";
+
+      background-color: $white;
+      border-radius: 50%;
+      box-shadow: 0 0 2px 2px rgba($body-color, 0.2);
+
+      transition: transform $transition-time $transition-effect;
+    }
+  }
+}

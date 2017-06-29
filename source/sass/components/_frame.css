@@ -1,0 +1,18 @@
+.frame {
+  border: 2px solid $muted;
+  border-radius: $radius;
+
+  &__header {
+    padding: $space-sm $space-md;
+
+    background-color: $muted;
+  }
+
+  &__title {
+    font-weight: $font-weight-bold;
+  }
+
+  &__body {
+    padding: $space-sm $space-md;
+  }
+}

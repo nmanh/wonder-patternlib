@@ -1,0 +1,51 @@
+.nav-tab-h {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    bottom: 0;
+    width: ($base * 4);
+
+    pointer-events: none;
+    content: "";
+    background-image: linear-gradient(to left, lighten($color-primary, 65%), rgba($muted, 0));
+    opacity: 1;
+    transition: opacity $transition-time $transition-effect;
+  }
+
+  &.end-list::after {
+    opacity: 0;
+  }
+
+  &__list {
+    display: flex;
+
+    overflow-y: auto;
+    white-space: nowrap;
+
+    background-color: lighten($color-primary, 65%);
+    border-top: 2px solid $border-color;
+
+    @include reset-default-list-style;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__item {
+
+    &.active {
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: $space-md;
+
+    color: $body-color;
+  }
+}

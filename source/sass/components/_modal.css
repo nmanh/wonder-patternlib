@@ -1,0 +1,113 @@
+.modal {
+  position: fixed 0;
+  z-index: $z-index-max;
+
+  display: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background-color: $white;
+  opacity: 0;
+  transition: opacity $transition-time;
+
+  @media (--medium-up) {
+    padding: 0 $space-md;
+    background-color: rgba($body-color, 0.7);
+  }
+
+  &.open {
+    opacity: 1;
+  }
+
+  &__dialog {
+    width: 100%;
+    height: 100%;
+
+    @media (--medium-up) {
+      max-width: 600px;
+      height: auto;
+      margin: ($base * 10) auto;
+    }
+
+    &_small {
+      max-width: ($base * 60);
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: $z-index-10;
+
+    height: 100%;
+    background-color: $white;
+
+    &.fade-in-down {
+      animation: fadeInDown $transition-time;
+    }
+
+    @media (--medium-up) {
+      height: auto;
+      border-radius: $radius;
+      box-shadow: 0 0 2px 2px rgba($body-color, 0.2);
+    }
+  }
+
+  &__body,
+  &__footer {
+    padding: $space-md $space-lg;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: $space-md $space-md;
+
+    border-bottom: 1px solid $border-color;
+    border-radius: $radius $radius 0 0;
+
+    &_2 {
+      color: $white;
+
+      background-color: $color-primary;
+      border-bottom: 0;
+    }
+  }
+
+  &__title {
+    flex-grow: 1;
+    margin: 0;
+
+    font-weight: $font-weight-normal;
+  }
+
+  &__btn-close {
+    padding-left: $space-sm;
+
+    background-color: transparent;
+    border: 0;
+  }
+
+  &__footer {
+    clear: fix;
+    background-color: $border-color;
+    border-radius: 0 0 $radius $radius;
+  }
+
+  // only use in styleguide
+
+  &.static {
+    position: relative;
+    display: block;
+
+    background-color: transparent;
+    opacity: 1;
+
+    .modal__dialog {
+      margin: 0;
+    }
+  }
+}
+
+.modal-open {
+  overflow-y: hidden;
+}

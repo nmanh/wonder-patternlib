@@ -1,0 +1,66 @@
+/* stylelint-disable */
+.react-autosuggest {
+  &__container {
+    position: relative;
+
+    clear: fix;
+  }
+
+  &__input {
+    display: block;
+    size: 100% $space-xlg;
+    padding: $space-xs $space-sm;
+
+    background-color: $white;
+    border-radius: $radius;
+
+    @include border($border-color);
+
+    &:focus {
+      border-color: $color-info;
+      outline: 0;
+
+      @include box-shadow;
+    }
+  }
+
+  &__suggestions-container {
+    position: absolute;
+    top: 100%;
+    z-index: $z-index-10;
+
+    width: 100%;
+
+    margin-top: $space-sm;
+  }
+
+  &__suggestions-list {
+    padding: 0;
+    margin: 0;
+
+    background-color: $white;
+    border-radius: $radius;
+
+    @include border($border-color);
+  }
+
+  &__suggestion {
+    padding: $space-sm;
+
+    list-style: none;
+
+    cursor: pointer;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $border-color;
+    }
+
+    &--highlighted {
+      background-color: $border-color;
+    }
+  }
+
+  &__word-highlighted {
+    font-weight: $font-weight-bold;
+  }
+}

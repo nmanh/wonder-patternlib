@@ -1,0 +1,94 @@
+.badge {
+  position: relative;
+  display: inline-block;
+
+  &__addon {
+    position: absolute;
+    top: -4px;
+    right: -8px;
+
+    height: $space-md;
+    padding: 0 5px;
+
+    font-size: $font-size-h6;
+    color: $white;
+    text-align: center;
+
+    pointer-events: none;
+    background-color: $color-warning;
+    border-radius: 8px;
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 100%;
+    right: -74px;
+
+    width: ($base * 40);
+    max-height: ($base * 60);
+    overflow-y: auto;
+
+    background-color: $white;
+    border: 1px solid $border-color;
+    border-radius: $radius;
+
+    transition: opacity $transition-time $transition-effect;
+
+    @media (--medium-up) {
+      right: -158px;
+
+      width: ($base * 60);
+    }
+  }
+
+  &__dropdown-header {
+    padding: $space-sm $space-md;
+
+    background-color: $alabaster;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__dropdown-item {
+    display: flex;
+    padding: $space-md;
+
+    color: $body-color;
+
+    transition: background-color $transition-time $transition-effect;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $border-color;
+    }
+
+    &:hover {
+      background-color: $alabaster;
+    }
+  }
+
+  &__dropdown-thumbnail {
+    flex-shrink: 0;
+    margin-right: $space-sm;
+  }
+
+  &__dropdown-text {
+    flex-grow: 1;
+  }
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

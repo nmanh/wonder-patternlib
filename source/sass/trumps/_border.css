@@ -1,0 +1,21 @@
+/* Border radius */
+
+/* remove border radius top-left & bottom-left */
+
+.br-r-tl-bl {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* remove border radius top-right & bottom-right */
+
+.br-r-tr-br {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* reset border radius */
+
+.br-reset {
+  border-radius: 0;
+}

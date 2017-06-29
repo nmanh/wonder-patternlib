@@ -1,0 +1,256 @@
+.btn {
+  display: inline-block;
+  padding: $space-xs $space-md;
+
+  line-height: $line-height-base;
+  color: $body-color;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  cursor: pointer;
+  background-color: darken($alabaster, 5%);
+  border-radius: $radius;
+
+  transition: background-color $transition-time $transition-effect;
+
+  @include border(darken($border-color, 10%));
+
+  &.active,
+  &:hover {
+    color: currentColor;
+    background-color: $muted;
+    outline: none;
+  }
+
+  &:focus {
+    background-color: darken($alabaster, 5%);
+    @include box-shadow;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: $opacity;
+
+    &:hover {
+      background-color: inherit;
+    }
+  }
+
+  &_special {
+    color: $color-primary;
+
+    background-color: $white;
+    border: 1px solid $color-primary;
+    border-radius: $radius;
+
+    &:hover {
+      color: $white;
+
+      background-color: $color-primary;
+    }
+  }
+
+  &_warning-bordered {
+    color: $color-warning;
+
+    border: 2px solid $color-warning;
+    border-radius: $radius;
+
+    &:hover {
+      color: $white;
+
+      background-color: $color-warning;
+    }
+  }
+
+  // &_faded {
+  //   opacity: $opac
+  // }
+
+  &_large {
+    padding: $space-sm $space-xlg;
+  }
+
+  &_small {
+    padding: $space-xs $space-sm;
+
+    font-size: $font-size-h6;
+  }
+
+  &_block {
+    display: block;
+    width: 100%;
+  }
+
+  &_reset {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+
+/* Generate button options except special */
+@each $type, $bg in (
+  primary: $color-primary,
+  success: $color-success,
+  info: $color-info,
+  warning: $color-warning,
+  danger: $color-danger
+) {
+
+  .btn_#{$type} {
+    color: $white;
+
+    background-color: $bg;
+    border-color: $bg;
+
+    &.active,
+    &:hover {
+      color: $white;
+      background-color: darken($bg, 10%);
+    }
+
+    &:focus {
+      background-color: $bg;
+    }
+
+    &:disabled {
+
+      &:hover,
+      &:focus {
+        background-color: $bg;
+      }
+    }
+  }
+}
+
+.btn-dropdown {
+  position: relative;
+
+  display: inline-block;
+
+  &__menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: $z-index-10;
+
+    min-width: $btn-group-dropdown-menu;
+    padding: $space-xs 0;
+    margin-top: $space-xs;
+
+    visibility: hidden;
+    background-color: $alabaster;
+    border-radius: $radius;
+    box-shadow: 2px 5px 7px -2px rgba($body-color, 0.4);
+    opacity: 0;
+
+    transition: opacity $transition-time $transition-effect;
+
+    @include border($border-color);
+
+    &.open {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+    padding: $space-xs $space-md;
+
+    color: $color-primary;
+    text-align: left;
+
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+.btn-split {
+
+  &__addon {
+    position: relative;
+
+    padding-right: $space-sm;
+    padding-left: $space-sm;
+
+    &::before {
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      width: 1px;
+
+      content: "";
+
+      background-color: rgba($body-color, 0.3);
+    }
+  }
+}
+
+.btn-social {
+  display: table;
+  padding: 0;
+
+  line-height: 1;
+  color: $white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  cursor: pointer;
+  background-color: $border-color;
+  border: 0;
+  border-radius: $radius;
+  box-shadow: inset 0 1px 2px 0 rgba($white, 0.4);
+
+  transition: background-color $transition-time $transition-effect;
+
+  &__addon,
+  &__text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__addon {
+    min-width: 54px;
+    padding: $space-sm $space-sm $space-sm $space-md;
+
+    border-right: 1px solid rgba($alabaster, 0.1);
+  }
+
+  &__text {
+    padding: $space-sm $space-md $space-sm $space-sm;
+
+    border-left: 1px solid rgba($body-color, 0.1);
+  }
+
+  &_block {
+    width: 100%;
+  }
+
+  &_fb {
+    background-color: $color-facebook;
+
+    &:hover {
+      background-color: darken($color-facebook, 10%);
+    }
+  }
+
+  &_gg {
+    background-color: $color-google-plus;
+
+    &:hover {
+      background-color: darken($color-google-plus, 10%);
+    }
+  }
+}

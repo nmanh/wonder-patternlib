@@ -1,0 +1,197 @@
+/* stylelint-disable */
+/* Take some parts from _reboot.css of Bootstrap framework
+ * See https://github.com/twbs/bootstrap/blob/v4-dev/scss/_reboot.scss
+ * for full description
+ */
+
+/* Table of contents: */
+
+/*
+ * 1. General
+ * 2. Body
+ * 3. Typography
+ * 4. Links
+ * 5. Figures
+ * 6. Images
+ * 7. Tables
+ * 8. Forms
+ * 9. Misc
+ */
+
+/* 1. General */
+html {
+  box-sizing: border-box;
+
+  font-size: $font-size-base;
+
+  // @media (--medium-up) {
+  //   font-size: $font-size-base;
+  // }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* 2. Body */
+body {
+  margin: 0;
+  overflow-y: scroll;
+
+  font-family: $font-family-body;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+
+  color: $body-color;
+
+  background-color: $body-bg;
+}
+
+/* 3. Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: $space-sm;
+  font-weight: $font-weight-bold;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $space-md;
+}
+
+ol,
+ul {
+  padding-left: 1.1rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: $space-md;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+blockquote {
+  margin: 0 0 $space-md;
+}
+
+/* 4. Links */
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($link-color, 10%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/* 5. Figures */
+figure {
+  margin: 0 0 $space-md;
+}
+
+/* 6. Images */
+img {
+  max-width: 100%;
+
+   vertical-align: middle;
+}
+
+/* 7. Tables */
+table {
+  border-collapse: collapse;
+  background-color: $body-bg;
+}
+
+/* 8. Forms */
+label {
+  display: inline-block;
+  max-width: 100%;
+  font-weight: $font-weight-bold;
+  margin-bottom: $space-xs;
+}
+
+button {
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input,
+button,
+select,
+textarea,
+optgroup {
+  font-size: $font-size-base;
+  font-family: $font-family-body;
+  font-weight: $font-weight-normal;
+  line-height: inherit;
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
+}
+
+[type="file"] {
+  display: block;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+
+  border: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: $space-sm;
+
+  font-size: $font-size-h3;
+  line-height: inherit;
+}
+
+/* 9. Misc */
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
+[role="button"] {
+  cursor: pointer;
+}

@@ -1,0 +1,105 @@
+/* Variables */
+/* Table of contents */
+/*
+ *  1. Global
+ *  2. Colors
+ *  3. Typography
+ *  4. Space
+ *  5. Media Query
+ *  6. Border
+ *  7. Misc
+ *
+ */
+/* 1. Global */
+/* 2. Colors */
+/* 3. Typography */
+/* This is optional, remove if nessesary */
+/* 4. Space */
+/* 5. Media Query */
+/* 6. Border */
+/* 7. Misc */
+/* Header */
+.pt-header {
+  background-color: #fff;
+}
+
+/* Navigation */
+.pt-main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  background-color: #02a876;
+}
+
+.pt-main-nav__item {
+  list-style: none;
+}
+
+.pt-main-nav__link {
+  display: block;
+  padding: 0.57143rem 1.14286rem;
+  color: #fff;
+}
+
+.pt-sub-nav {
+  padding: 0.57143rem 0;
+  margin: 0;
+}
+
+.pt-sub-nav__item {
+  display: inline-block;
+  list-style: none;
+}
+
+.pt-sub-nav__link {
+  display: block;
+  padding: 0.57143rem;
+  margin-bottom: 0.57143rem;
+  color: #fff;
+  background-color: #02a876;
+  border-radius: 0.21429rem;
+}
+
+.pt-wrapper {
+  margin-bottom: 2.28571rem;
+  border: 0.07143rem solid #e3e2e1;
+  border-radius: 0.21429rem;
+}
+
+.pt-section-heading {
+  color: #02a876;
+}
+
+.pt-heading {
+  padding: 1.14286rem;
+  color: #fff;
+  background-color: #999;
+}
+
+.pt-code-block pre {
+  /* stylelint-disable-line */
+  margin: 0;
+  border-radius: 0 0 0.21429rem 0.21429rem;
+}
+
+.pt-code-block__title {
+  padding: 0.57143rem 1.14286rem;
+  margin-bottom: 0;
+  color: #fff;
+  background-color: #999;
+}
+
+.pt-example {
+  padding: 2.28571rem 1.14286rem;
+}
+
+.pt-description {
+  padding: 2.28571rem 1.14286rem;
+  border-bottom: 0.14286rem solid #999;
+}
+
+/*# sourceMappingURL=styleguide.css.map */

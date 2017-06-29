@@ -1,0 +1,120 @@
+.txt-fz-h1 {
+  font-size: $font-size-h1;
+}
+
+.txt-fz-h2 {
+  font-size: $font-size-h2;
+}
+
+.txt-large {
+  font-size: $font-size-h4;
+}
+
+.txt-small {
+  // font-size: $font-size-h6;
+  font-size: 14px;
+}
+
+.txt-xsmall {
+  font-size: $base;
+}
+
+.txt-muted {
+  color: $muted;
+}
+
+.txt-bold {
+  font-weight: $font-weight-bold;
+}
+
+/* Alignment */
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+/* Colors */
+
+.txt-white {
+  color: $white;
+}
+
+.txt-primary-color {
+  color: $color-primary;
+}
+
+.txt-primary-color-lighten {
+  color: $jade-lighten;
+}
+
+.txt-warning-color {
+  color: $color-warning;
+}
+
+.txt-danger-color {
+  color: $color-danger;
+}
+
+.txt-body-color {
+  color: $body-color;
+}
+
+/* Text transform */
+
+.txt-uppercase {
+  text-transform: uppercase;
+}
+
+.txt-capitalize {
+  text-transform: capitalize;
+}
+
+/* Font weight */
+
+.txt-fw-thin {
+  font-weight: $font-weight-base;
+}
+
+.txt-fw-normal {
+  font-weight: $font-weight-normal;
+}
+
+.txt-italic {
+  font-style: italic;
+}
+
+.txt-ellipsis-1-lines {
+  display: -webkit-box; /* stylelint-disable-line */
+  max-height: ($line-height-base * 1rem);
+  overflow: hidden;
+
+  line-height: $line-height-base;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical; /* stylelint-disable-line */
+  -webkit-line-clamp: 1; /* stylelint-disable-line */
+}
+
+.txt-ellipsis-2-lines {
+  display: -webkit-box; /* stylelint-disable-line */
+  max-height: ($line-height-base * 2 * 1rem);
+  overflow: hidden;
+
+  line-height: $line-height-base;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical; /* stylelint-disable-line */
+  -webkit-line-clamp: 2; /* stylelint-disable-line */
+}
+
+/* Wrap */
+
+.txt-pre-wrap {
+  white-space: pre-wrap;
+}

@@ -1,0 +1,10 @@
+.mask {
+  position: fixed 0;
+  overflow-y: auto;
+
+  background-color: $white;
+
+  &__header {
+    background-color: $color-primary;
+  }
+}

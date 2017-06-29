@@ -1,0 +1,45 @@
+.mobile-nav {
+  display: flex;
+
+  &__link {
+    padding: $space-xs;
+    flex: 1;
+
+    color: $white;
+    text-align: center;
+
+    background-color: $color-primary;
+
+    &:focus {
+      color: $white;
+    }
+
+    &.active {
+      background-color: lighten($color-primary, 4%);
+    }
+  }
+
+  &__title {
+    // font-size: $font-size-h6;
+    font-size: 12px;
+  }
+
+  &__icon-wrap {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__icon-addon {
+    position: absolute;
+    top: -4px;
+    left: 8px;
+    padding: 0 5px;
+
+    font-size: $font-size-h6;
+    color: $white;
+
+    pointer-events: none;
+    background-color: $color-warning;
+    border-radius: 8px;
+  }
+}
