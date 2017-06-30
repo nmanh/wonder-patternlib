@@ -1,0 +1,49 @@
+.carousel-2 {
+  position: relative;
+
+  &__item {
+    position: relative;
+
+    &::before {
+      position: absolute 0;
+
+      content: "";
+
+      background-color: rgba($body-color, 0.6);
+    }
+  }
+
+  &__content {
+    position: absolute 0;
+    z-index: $z-index-10;
+  }
+
+  &__control {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $z-index-10;
+
+    .slick-list {
+      padding-top: $space-md;
+    }
+  }
+
+  &__control-item {
+    padding: $space-md;
+
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    border: 1px solid $white;
+
+    // transition: transform $transition-time $transition-effect;
+
+    &:hover {
+      transform: scaleY(1.2);
+    }
+  }
+}

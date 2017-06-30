@@ -8,7 +8,10 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   argv = require('minimist')(process.argv.slice(2)),
   chalk = require('chalk'),
-  gulpLoadPlugins = require('gulp-load-plugins');
+  gulpLoadPlugins = require('gulp-load-plugins'),
+  rollup = require('rollup'),
+  rollupResolve = require('rollup-plugin-node-resolve'),
+  rollupBabel = require('rollup-plugin-babel');
 
 var $ = gulpLoadPlugins();
 var dev = true;
@@ -26,7 +29,7 @@ gulp.task('styles', () => {
     triangle    = require('postcss-triangle'),
     processors  = [
       pxtorem({
-        rootValue: 14,
+        rootValue: 16,
         replace: true,
         propWhiteList: [],
         selectorBlackList: [/^html$/],
@@ -69,9 +72,44 @@ gulp.task('stylelint', () => {
       syntax: 'scss'
     }))
 })
-gulp.task('watch:stylelint', () => {
-  gulp.watch('source/sass/**/*.css', gulp.series('stylelint'))
+// gulp.task('watch:stylelint', () => {
+//   gulp.watch('source/sass/**/*.css', gulp.series('stylelint'))
+// })
+
+gulp.task('styles:compress', () => {
+  const cssnano = require('cssnano')
+
+  return gulp.src('source/css/style.css')
+    .pipe($.postcss([cssnano]))
+    .pipe($.rename({suffix: '.min'}))
+    .pipe(gulp.dest('source/css'));
 })
+
+// bundle js
+gulp.task('esnext', () => {
+//   return rollup.rollup({
+//     entry: 'source/esnext/app.js',
+//     plugins: [
+//       rollupResolve(),
+//       rollupBabel({
+//         exclude: 'node_modules/**' // only transpile our source code
+//       })
+//     ]
+//   })
+//   .then(function(bundle) {
+//     bundle.write({
+//       format: 'umd',
+//       moduleName: 'Scrips',
+//       dest: 'source/js',
+//       sourceMap: true
+//     })
+//   })
+
+  return gulp.src('source/esnext/*.js')
+    .pipe($.babel())
+    .pipe(gulp.dest('source/js'))
+})
+
 // End custom tasks
 
 /**
@@ -213,7 +251,7 @@ gulp.task('patternlab:loadstarterkit', function (done) {
   done();
 });
 
-gulp.task('patternlab:build', gulp.series('pl-assets', build));
+gulp.task('patternlab:build', gulp.series('styles:compress', 'pl-assets', build));
 
 gulp.task('patternlab:installplugin', function (done) {
   patternlab.installplugin(argv.plugin);
@@ -252,6 +290,11 @@ function reloadCSS(done) {
   done();
 }
 
+function reloadJS(done) {
+  browserSync.reload('*.js');
+  done();
+}
+
 function watch() {
   const watchers = [
     {
@@ -267,10 +310,16 @@ function watch() {
       tasks: gulp.parallel('styles', 'stylelint')
     },
     {
+      name: 'ESNEXT',
+      paths: [normalizePath(paths().source.esnext, '**', '*.js')],
+      config: { awaitWriteFinish: true },
+      tasks: gulp.series('esnext')
+    },
+    {
       name: 'JS',
       paths: [normalizePath(paths().source.js, '**', '*.js')],
       config: { awaitWriteFinish: true },
-      tasks: gulp.series('pl-copy:js')
+      tasks: gulp.series('pl-copy:js', reloadJS)
     },
     {
       name: 'Styleguide Files',
@@ -286,7 +335,7 @@ function watch() {
         normalizePath(paths().source.data, '**', '*.json'),
         normalizePath(paths().source.fonts, '**', '*'),
         normalizePath(paths().source.images, '**', '*'),
-        normalizePath(paths().source.js, '**', '*'),
+        // normalizePath(paths().source.js, '**', '*'),
         normalizePath(paths().source.meta, '**', '*'),
         normalizePath(paths().source.annotations, '**', '*')
       ].concat(getTemplateWatches()),
@@ -340,4 +389,4 @@ gulp.task('patternlab:connect', gulp.series(function (done) {
 ******************************************************/
 gulp.task('default', gulp.series('patternlab:build'));
 gulp.task('patternlab:watch', gulp.series('patternlab:build', watch));
-gulp.task('patternlab:serve', gulp.series('styles', 'patternlab:build', 'patternlab:connect', watch));
+gulp.task('patternlab:serve', gulp.series('esnext', 'styles', 'patternlab:build', 'patternlab:connect', watch));

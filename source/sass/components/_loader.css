@@ -1,5 +1,4 @@
 .loader {
-
   &__line {
     height: $space-md;
 
@@ -29,7 +28,6 @@
 }
 
 @keyframes bubble {
-
   0% {
     background-color: $border-color;
   }

@@ -24,13 +24,13 @@ $silver: #999;
 $mercury: #e3e2e1;
 
 $jade: #02a876;
-$jade-lighten: rgba($jade, 0.4);
-$jade-darken: darken($jade, 10%);
+$jade-lighten: #02ba83;
 
 $blue-jeans: #5bc0eb;
 $flame: #e55934;
-$android-green: #9bc53d;
+$android-green: #8cc152;
 $jaffa: #f07736;
+$tan-hide: #f7945f;
 $alabaster: #f8f8f8;
 
 $color-primary: $jade;

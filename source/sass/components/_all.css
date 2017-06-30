@@ -12,6 +12,7 @@
 @import "nav-tab-h";
 @import "nav";
 @import "carousel";
+@import "carousel-2";
 @import "divider";
 @import "loader";
 @import "badge";
@@ -23,3 +24,4 @@
 @import "mobile-nav";
 @import "rope";
 @import "mask";
+@import "heading-section";

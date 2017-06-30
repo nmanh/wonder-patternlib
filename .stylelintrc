@@ -13,7 +13,7 @@
     "no-unsupported-browser-features": null,
     "primer/selector-no-utility": null,
     "csstree/validator": {
-      "ignore": ["size", "position"]
+      "ignore": ["size", "position", "clear", "triangle"]
     },
     "plugin/no-unsupported-browser-features": [true, {
       "browsers": [

@@ -5,6 +5,8 @@
 
   text-align: center;
 
+  background-color: $color-primary;
+
   @media (--large-up) {
     font-size: $font-size-h4;
   }

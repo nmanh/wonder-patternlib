@@ -9,3 +9,9 @@
 .img-full-width {
   width: 100%;
 }
+
+.img-apple {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 $space-xs $muted;
+}

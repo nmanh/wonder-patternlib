@@ -61,7 +61,6 @@
   warning: $color-warning,
   danger: $color-danger
 ) {
-
   .panel_#{$type} {
     @include border($color);
 

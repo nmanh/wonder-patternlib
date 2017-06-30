@@ -41,12 +41,12 @@
 
 .pt-main-nav__link {
   display: block;
-  padding: 0.57143rem 1.14286rem;
+  padding: 0.5rem 1rem;
   color: #fff;
 }
 
 .pt-sub-nav {
-  padding: 0.57143rem 0;
+  padding: 0.5rem 0;
   margin: 0;
 }
 
@@ -57,17 +57,17 @@
 
 .pt-sub-nav__link {
   display: block;
-  padding: 0.57143rem;
-  margin-bottom: 0.57143rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
   color: #fff;
   background-color: #02a876;
-  border-radius: 0.21429rem;
+  border-radius: 0.1875rem;
 }
 
 .pt-wrapper {
-  margin-bottom: 2.28571rem;
-  border: 0.07143rem solid #e3e2e1;
-  border-radius: 0.21429rem;
+  margin-bottom: 2rem;
+  border: 0.0625rem solid #e3e2e1;
+  border-radius: 0.1875rem;
 }
 
 .pt-section-heading {
@@ -75,7 +75,7 @@
 }
 
 .pt-heading {
-  padding: 1.14286rem;
+  padding: 1rem;
   color: #fff;
   background-color: #999;
 }
@@ -83,23 +83,23 @@
 .pt-code-block pre {
   /* stylelint-disable-line */
   margin: 0;
-  border-radius: 0 0 0.21429rem 0.21429rem;
+  border-radius: 0 0 0.1875rem 0.1875rem;
 }
 
 .pt-code-block__title {
-  padding: 0.57143rem 1.14286rem;
+  padding: 0.5rem 1rem;
   margin-bottom: 0;
   color: #fff;
   background-color: #999;
 }
 
 .pt-example {
-  padding: 2.28571rem 1.14286rem;
+  padding: 2rem 1rem;
 }
 
 .pt-description {
-  padding: 2.28571rem 1.14286rem;
-  border-bottom: 0.14286rem solid #999;
+  padding: 2rem 1rem;
+  border-bottom: 0.125rem solid #999;
 }
 
 /*# sourceMappingURL=styleguide.css.map */
