@@ -1,5 +1,0 @@
----
-title: Heading
----
-
-Heading hierarchy

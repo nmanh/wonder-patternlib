@@ -1,0 +1,575 @@
+{
+  "version": 1,
+  "timestamp": 1499071233784,
+  "graph": {
+    "options": {
+      "directed": true,
+      "multigraph": false,
+      "compound": false
+    },
+    "nodes": [
+      {
+        "v": "atoms/01-global/01-brand-color.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/01-global/02-neutral-color.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/01-global/03-utility-color.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/01-global/04-font.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/buttons/button-state-active.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/buttons/button-state-disabled.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/buttons/button-tags.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/buttons/button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/buttons/button~danger.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/buttons/button~info.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/buttons/button~primary.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/buttons/button~special.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/buttons/button~success.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/buttons/button~warning-bordered.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/buttons/button~warning.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/buttons/sizes.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/forms/checkbox.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/forms/checkbox~inline.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/forms/help-text.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/forms/input-field.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/forms/input-field~disabled.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/forms/label.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/forms/radio.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/forms/radio~inline.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/forms/select.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/forms/select~disabled.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/forms/select~multi.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/forms/text-area.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/typography/01-overview.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/typography/body-copy.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "atoms/typography/heading.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/badge/badge.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/buttons/button-dropdown.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/buttons/button-socials.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/buttons/button-split.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/carousel/carousel-2.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/pages-edit-essay/pages-edit-essay.rendered.html",
+          "lineagePattern": "pages-edit-essay"
+        }
+      },
+      {
+        "v": "molecules/forms/field-inline.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/forms/field.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/forms/input-group.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/navigation/navigation.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/panel/panel-basic.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/panel/panel-footer.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/panel/panel-heading.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/panel/panel.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/panel/panel~danger.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/panel/panel~info.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/panel/panel~primary.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/panel/panel~special-border.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/panel/panel~special.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/panel/panel~success.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/panel/panel~warning.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "molecules/typography/heading-section.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "organisms/edit-essay/_edit-essay-feeds.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/pages-edit-essay/pages-edit-essay.rendered.html",
+          "lineagePattern": "pages-edit-essay"
+        }
+      },
+      {
+        "v": "organisms/edit-essay/_edit-essay-top-editors.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/pages-edit-essay/pages-edit-essay.rendered.html",
+          "lineagePattern": "pages-edit-essay"
+        }
+      },
+      {
+        "v": "organisms/header/header.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/pages-edit-essay/pages-edit-essay.rendered.html",
+          "lineagePattern": "pages-edit-essay"
+        }
+      },
+      {
+        "v": "organisms/question/_question-answer-action.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/organisms-question-question/organisms-question-question.rendered.html",
+          "lineagePattern": "organisms-question"
+        }
+      },
+      {
+        "v": "organisms/question/_question-answer-content.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/organisms-question-question/organisms-question-question.rendered.html",
+          "lineagePattern": "organisms-question"
+        }
+      },
+      {
+        "v": "organisms/question/_question-header.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/organisms-question-question/organisms-question-question.rendered.html",
+          "lineagePattern": "organisms-question"
+        }
+      },
+      {
+        "v": "organisms/question/_question-title.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/organisms-question-question/organisms-question-question.rendered.html",
+          "lineagePattern": "organisms-question"
+        }
+      },
+      {
+        "v": "organisms/question/question.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/organisms-edit-essay-_edit-essay-feeds/organisms-edit-essay-_edit-essay-feeds.rendered.html",
+          "lineagePattern": "organisms-edit-essay-feeds"
+        }
+      },
+      {
+        "v": "pages/edit-essay.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "utilities/images/image-apple.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "utilities/images/image-circle.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "utilities/images/image-full-width.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "utilities/images/image-rounded.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "/Users/ngmanh/Sandbox/yola-styleguide/source/_meta/_00-head.mustache",
+        "value": {
+          "compileState": null
+        }
+      },
+      {
+        "v": "/Users/ngmanh/Sandbox/yola-styleguide/source/_meta/_01-foot.mustache",
+        "value": {
+          "compileState": null
+        }
+      }
+    ],
+    "edges": [
+      {
+        "v": "atoms/buttons/button~danger.json",
+        "w": "atoms/buttons/button.mustache",
+        "value": {}
+      },
+      {
+        "v": "atoms/buttons/button~info.json",
+        "w": "atoms/buttons/button.mustache",
+        "value": {}
+      },
+      {
+        "v": "atoms/buttons/button~primary.json",
+        "w": "atoms/buttons/button.mustache",
+        "value": {}
+      },
+      {
+        "v": "atoms/buttons/button~special.json",
+        "w": "atoms/buttons/button.mustache",
+        "value": {}
+      },
+      {
+        "v": "atoms/buttons/button~success.json",
+        "w": "atoms/buttons/button.mustache",
+        "value": {}
+      },
+      {
+        "v": "atoms/buttons/button~warning-bordered.json",
+        "w": "atoms/buttons/button.mustache",
+        "value": {}
+      },
+      {
+        "v": "atoms/buttons/button~warning.json",
+        "w": "atoms/buttons/button.mustache",
+        "value": {}
+      },
+      {
+        "v": "atoms/forms/checkbox~inline.json",
+        "w": "atoms/forms/checkbox.mustache",
+        "value": {}
+      },
+      {
+        "v": "atoms/forms/input-field~disabled.json",
+        "w": "atoms/forms/input-field.mustache",
+        "value": {}
+      },
+      {
+        "v": "atoms/forms/radio~inline.json",
+        "w": "atoms/forms/radio.mustache",
+        "value": {}
+      },
+      {
+        "v": "atoms/forms/select~disabled.json",
+        "w": "atoms/forms/select.mustache",
+        "value": {}
+      },
+      {
+        "v": "atoms/forms/select~multi.json",
+        "w": "atoms/forms/select.mustache",
+        "value": {}
+      },
+      {
+        "v": "molecules/panel/panel~danger.json",
+        "w": "molecules/panel/panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "molecules/panel/panel~info.json",
+        "w": "molecules/panel/panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "molecules/panel/panel~primary.json",
+        "w": "molecules/panel/panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "molecules/panel/panel~special-border.json",
+        "w": "molecules/panel/panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "molecules/panel/panel~special.json",
+        "w": "molecules/panel/panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "molecules/panel/panel~success.json",
+        "w": "molecules/panel/panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "molecules/panel/panel~warning.json",
+        "w": "molecules/panel/panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "organisms/question/question.mustache",
+        "w": "organisms/question/_question-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "organisms/question/question.mustache",
+        "w": "organisms/question/_question-title.mustache",
+        "value": {}
+      },
+      {
+        "v": "organisms/question/question.mustache",
+        "w": "organisms/question/_question-answer-content.mustache",
+        "value": {}
+      },
+      {
+        "v": "organisms/question/question.mustache",
+        "w": "organisms/question/_question-answer-action.mustache",
+        "value": {}
+      },
+      {
+        "v": "organisms/edit-essay/_edit-essay-feeds.mustache",
+        "w": "organisms/question/question.mustache",
+        "value": {}
+      },
+      {
+        "v": "pages/edit-essay.mustache",
+        "w": "organisms/header/header.mustache",
+        "value": {}
+      },
+      {
+        "v": "pages/edit-essay.mustache",
+        "w": "molecules/carousel/carousel-2.mustache",
+        "value": {}
+      },
+      {
+        "v": "pages/edit-essay.mustache",
+        "w": "organisms/edit-essay/_edit-essay-top-editors.mustache",
+        "value": {}
+      },
+      {
+        "v": "pages/edit-essay.mustache",
+        "w": "organisms/edit-essay/_edit-essay-feeds.mustache",
+        "value": {}
+      }
+    ]
+  }
+}
