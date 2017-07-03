@@ -11,7 +11,9 @@ var gulp = require('gulp'),
   gulpLoadPlugins = require('gulp-load-plugins'),
   rollup = require('rollup'),
   rollupResolve = require('rollup-plugin-node-resolve'),
-  rollupBabel = require('rollup-plugin-babel');
+  rollupBabel = require('rollup-plugin-babel'),
+  ghPages= require('gulp-gh-pages')
+  ;
 
 var $ = gulpLoadPlugins();
 var dev = true;
@@ -108,6 +110,11 @@ gulp.task('esnext', () => {
   return gulp.src('source/esnext/*.js')
     .pipe($.babel())
     .pipe(gulp.dest('source/js'))
+})
+
+gulp.task('deploy', () => {
+  return gulp.src('./public/**/*')
+    .pipe(ghPages());
 })
 
 // End custom tasks
