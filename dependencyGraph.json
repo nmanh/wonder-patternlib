@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1499148572533,
+  "timestamp": 1499915885435,
   "graph": {
     "options": {
       "directed": true,
@@ -283,7 +283,9 @@
       {
         "v": "02-molecules/navigation/navigation.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-organisms-header-header/03-organisms-header-header.rendered.html",
+          "lineagePattern": "organisms-header"
         }
       },
       {
@@ -365,6 +367,12 @@
         }
       },
       {
+        "v": "02-molecules/tags/tag-3.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "02-molecules/typography/heading-section.mustache",
         "value": {
           "compileState": "clean"
@@ -390,6 +398,24 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/05-pages-edit-essay/05-pages-edit-essay.rendered.html",
           "lineagePattern": "pages-edit-essay"
+        }
+      },
+      {
+        "v": "03-organisms/essay/_essay-header.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-organisms/essay/essay.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-organisms/essay/essay~has-anwser.json",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -724,6 +750,11 @@
         "value": {}
       },
       {
+        "v": "03-organisms/essay/essay~has-anwser.json",
+        "w": "03-organisms/essay/essay.mustache",
+        "value": {}
+      },
+      {
         "v": "04-utilities/layout/flex~item-full-space.json",
         "w": "04-utilities/layout/flex.mustache",
         "value": {}
@@ -826,6 +857,11 @@
       {
         "v": "03-organisms/edit-essay/_edit-essay-feeds.mustache",
         "w": "03-organisms/question/question.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-organisms/header/header.mustache",
+        "w": "02-molecules/navigation/navigation.mustache",
         "value": {}
       },
       {

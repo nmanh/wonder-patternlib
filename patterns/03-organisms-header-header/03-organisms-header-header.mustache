@@ -1,72 +1,59 @@
-<header class={cls}>
-  <div class="app-header__main">
+<header class="app-header">
+  <div class="app-header__main" style="position: relative">
 
-    <div class="row column lf lf_align-middle large-mbsm mblg">
+    <div class="row column lf lf_align-middle">
 
-      <a href="/example-pages/homepage" class="app-header__logo medium-mrsm mrmd">
-        <h1 class="mb-reset show-for-medium">Wonder</h1>
-        <h1 class="mb-reset show-for-small-only">W</h1>
+      <a href="#" class="app-header__logo mrxlg">
+        <h1 class="mb-reset">W</h1>
       </a>
 
-      <div class="app-header__action-box medium-mrmd mrlg">
+      <div class="app-header__nav mrlg">
+        {{> molecules-navigation}}
+      </div>
 
-        <div class="lf">
-
+      <div class="app-header__action-box mrlg">
+        <div class="lf lf_justify-end">
           <!-- Search form -->
           <div class="app-header__search-box lf_full-space">
             <form>
               <div class="app-header__search-wrap">
-                <input class="app-header__search-input shadow" type="search" placeholder="Tim kiem voi Wonder" />
+                <input class="app-header__search-input" type="search" placeholder="Tim kiem voi Wonder" />
                 <button class="app-header__search-btn">
-                <i class="fa fa-search"></i>
-              </button>
+                  <i class="fa fa-search"></i>
+                </button>
               </div>
             </form>
           </div>
 
-          <div class="app-header__cta-box mlmd">
-            <button class="btn btn_warning btn_large shadow txt-uppercase">Hỏi</button>
+          <div class="mlsm">
+            <button class="btn btn_warning">Đặt câu hỏi</button>
           </div>
         </div>
-
       </div>
 
       <!-- Notification -->
-      <div class="badge medium-mrmd mrxlg">
+      <div class="badge txt-center mrlg">
         <a href="#" class="badge__icon txt-white">
-          <i class="fa fa-bell fa-lg"></i>
+          <i class="fa fa-bell-o fa-lg"></i>
         </a>
         <div class="badge__addon">1</div>
       </div>
 
-      <div>
-        <a href="/example-pages/user-detail" class="lf lf_align-middle txt-white">
-          <img src="https://unsplash.it/40" class="img-circle mrsm" alt="avatar" />
-          <div class="show-for-medium">Nguyen ABC XYX</div>
+      <div class="mrlg">
+        <a href="#" class="txt-center txt-white">
+          <div>
+            <img src="https://unsplash.it/24" class="img-circle" alt="avatar" />
+          </div>
+          <div class="txt-small">Nguyen <i class="fa fa-caret-down"></i></div>
         </a>
       </div>
 
+      <!-- <div class="lf">
+        <button class="btn btn_small btn_special br-r-tr-br">VI</button>
+        <button class="btn btn_small btn_special br-r-tl-bl">EN</button>
+      </div> -->
+
     </div>
 
-    <nav class="nav">
-      <a href="/example-pages/homepage" class="nav__link">
-        <i class="fa fa-home"></i> <span class="show-for-medium">Trang chủ</span>
-      </a>
-      <a href="/example-pages/blog" class="nav__link">
-        <i class="fa fa-comments"></i> <span class="show-for-medium">Blog</span>
-      </a>
-      <a href="#" class="nav__link">
-        <i class="fa fa-pencil"></i> <span class="show-for-medium">Essay edit</span>
-      </a>
-      <!-- <a href="#" class="nav__link">
-        <i class="fa fa-video-camera"></i> <span class="show-for-medium">Live session</span>
-      </a> -->
-      <!-- <a href="/example-pages/vocab" class="nav__link">
-        <i class="fa fa-edit"></i> <span class="show-for-medium">Vocab</span>
-      </a>
-      <a href="/example-pages/quiz-test" class="nav__link">
-        <i class="fa fa-question-circle"></i> <span class="show-for-medium">Quiz/Test</span>
-      </a> -->
-    </nav>
-
   </div>
+</header>

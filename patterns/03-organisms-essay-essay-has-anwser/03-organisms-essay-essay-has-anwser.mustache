@@ -1,0 +1,89 @@
+<article class="panel">
+  <div class="panel__body">
+    <ul class="list-inline-2 txt-muted txt-small mbmd">
+      <li>Essay</li>
+      <li>IELTS, Writing</li>
+      <li><span class="mrmd">4 Essays edited</span> 2k Views</li>
+    </ul>
+
+    <h2 class="mbmd">
+      <a href="#" class="txt-body-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit!</a>
+    </h2>
+
+    {{#hasAnswer}}
+    <div class="lf lf_align-middle mbmd">
+      <div class="lf_full-space">
+        <div class="lf lf_align-middle">
+          <a class="lf_no-gas" href="#">
+              <img src="https://unsplash.it/100" class="img-circle mrmd" alt="User avatar" width="40">
+            </a>
+          <div>
+            <ul class="list-unstyled txt-body-color">
+              <li class="mbxs">
+                <a class="txt-body-color txt-fw-normal" href="#">
+                    Miss Richard Green
+                  </a>
+              </li>
+              <li class="txt-muted txt-small">4 Người theo dõi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mbmd rope txt-fw-normal">
+      <div class="rope__content-truncate">
+        <p>Trong quá khứ, cả ĐT Đức và Chile đều chưa từng lọt vào chung kết Confederations Cup. Thành tích tốt nhất của ĐT Đức trước đây chỉ là vị trí thứ ba vào năm 2006 khi họ là chủ nhà. Trong khi đó, giải đấu năm 2017 mới là lần đầu tiên ĐT Chile góp
+          mặt ở sân chơi này. Trước chung kết, hàng công tuyển Đức tốt nhất Confed Cup với 11 bàn thắng, Chile là hàng thủ vững nhất với 2 bàn thua.</p>
+      </div>
+    </div>
+    {{/hasAnswer}} {{^hasAnswer}}
+    <p class="mbmd">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque officia natus facere aut soluta perferendis aliquid voluptatem beatae, iste doloremque iusto reprehenderit debitis, dicta dolores id, at exercitationem saepe obcaecati!</p>
+    {{/hasAnswer}}
+
+    <div class="lf lf_align-center">
+      <div class="lf_full-space">
+        {{^hasAnswer}}
+        <button class="btn btn_small mrsm">
+            <i class="fa fa-pencil"></i> Edit essay
+          </button> {{/hasAnswer}}
+        <button class="btn btn_small mrmd">
+          <i class="fa fa-chevron-up"></i>
+        </button>
+        <button class="btn btn_reset btn_small mrmd">
+          <i class="fa fa-chevron-down"></i>
+        </button>
+        <button class="btn btn_reset btn_small txt-muted">
+          Comment
+        </button>
+      </div>
+
+      <div>
+        <a href="#" class="txt-small txt-primary-color-lighten mrsm">
+          <i class="fa fa-facebook-square"></i>
+        </a>
+
+        <div class="btn-dropdown">
+          <button class="btn btn_reset btn-dropdown__btn">
+            <div class="txt-primary-color-lighten txt-xsmall pbxs ptxs post-extra-actions-t">
+              <i class="fa fa-circle mrxs"></i>
+              <i class="fa fa-circle mrxs"></i>
+              <i class="fa fa-circle"></i>
+            </div>
+          </button>
+          <div class="btn-dropdown__menu">
+            <div>
+              <button class="btn btn_reset btn-dropdown__item">
+                <i class="fa fa-facebook-square"></i> Share
+              </button>
+              <button class="btn btn_reset btn-dropdown__item">Đánh dấu</button>
+              <button class="btn btn_reset btn-dropdown__item">Đã cảm ơn</button>
+              <button class="btn btn_reset btn-dropdown__item">Hỏi blogger</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</article>
