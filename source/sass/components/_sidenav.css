@@ -1,0 +1,44 @@
+.sidenav {
+  font-size: $font-size-h6;
+
+  &__header {
+    padding: $space-xs $space-sm;
+
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__title {
+    margin: 0;
+
+    font-weight: $font-weight-bold;
+    line-height: 1;
+    color: $muted;
+  }
+
+  &__body {
+    padding: $space-xs 0;
+  }
+
+  &__item {
+    display: block;
+    padding: $space-sm;
+
+    // line-height: 1;
+    color: $body-color;
+
+    border: 1px solid transparent;
+    border-radius: $radius;
+
+    &.active,
+    &:hover {
+      color: $body-color;
+
+      background-color: $white;
+      border-color: $border-color;
+    }
+
+    &.active {
+      font-weight: $font-weight-bold;
+    }
+  }
+}

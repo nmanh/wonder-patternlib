@@ -2921,6 +2921,44 @@ textarea.f__control {
   font-size: 0.875rem;
 }
 
+.sidenav {
+  font-size: 0.8rem;
+}
+
+.sidenav__header {
+  padding: 0.25rem 0.5rem;
+  border-bottom: 0.0625rem solid #e7e5e5;
+}
+
+.sidenav__title {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1;
+  color: #999;
+}
+
+.sidenav__body {
+  padding: 0.25rem 0;
+}
+
+.sidenav__item {
+  display: block;
+  padding: 0.5rem;
+  color: #514f4f;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.1875rem;
+}
+
+.sidenav__item.active, .sidenav__item:hover {
+  color: #514f4f;
+  background-color: #fff;
+  border-color: #e7e5e5;
+}
+
+.sidenav__item.active {
+  font-weight: 700;
+}
+
 .carousel {
   position: relative;
 }
