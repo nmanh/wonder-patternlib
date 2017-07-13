@@ -27,6 +27,10 @@
   font-weight: $font-weight-bold;
 }
 
+.txt-underline {
+  text-decoration: underline;
+}
+
 /* Alignment */
 
 .txt-left {
@@ -52,7 +56,7 @@
 }
 
 .txt-primary-color-lighten {
-  color: $jade-lighten;
+  color: rgba($jade-lighten, 0.4);
 }
 
 .txt-warning-color {

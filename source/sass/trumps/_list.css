@@ -16,7 +16,7 @@
   > li { /* stylelint-disable-line */
     padding: $space-sm $space-md;
 
-    &:not(:last-child) {
+    &:not(:last-child) { /* stylelint-disable-line */
       border-bottom: 1px solid $border-color;
     }
   }
@@ -30,11 +30,11 @@
     display: inline-flex;
     align-items: center;
 
-    &:not(:last-child) {
+    &:not(:last-child) { /* stylelint-disable-line */
       margin-right: $space-sm;
     }
 
-    &::after {
+    &::after { /* stylelint-disable-line */
       display: inline-block;
       margin-left: $space-sm;
       content: "";
@@ -44,7 +44,7 @@
       border-radius: 50%;
     }
 
-    &:last-child::after {
+    &:last-child::after { /* stylelint-disable-line */
       display: none;
     }
   }

@@ -1,19 +1,13 @@
 .nav {
   display: flex;
-  max-width: $row-width;
-  margin: 0 auto;
 
   text-align: center;
 
   background-color: $color-primary;
 
-  @media (--large-up) {
-    font-size: $font-size-h4;
-  }
-
   &__link {
     flex: 1;
-    padding: $space-md $space-xs;
+    padding: ($space-sm + 2) $space-xs $space-sm;
 
     font-weight: $font-weight-normal;
     line-height: 1;
@@ -22,15 +16,21 @@
 
     transition: background-color $transition-time $transition-effect;
 
+    // &:not(:last-child) {
+    //   margin-right: $space-sm;
+    // }
+
     &.active,
     &:hover {
       color: $white;
 
-      background-color: lighten($color-primary, 5%);
+      background-color: $jade-lighten;
     }
+  }
 
-    @media (--medium-up) {
-      padding: $space-md $space-sm;
-    }
+  &__text {
+    margin-top: $space-sm;
+
+    font-size: 14px;
   }
 }

@@ -20,11 +20,12 @@ $row-width: 992px;
 /* 2. Colors */
 $emperor: #514f4f;
 $white: #fff;
+$white-2: #fdfdfd;
 $silver: #999;
-$mercury: #e3e2e1;
+$mercury: #e7e5e5;
 
 $jade: #02a876;
-$jade-lighten: #02ba83;
+$jade-lighten: #03bd85;
 
 $blue-jeans: #5bc0eb;
 $flame: #e55934;
@@ -40,7 +41,7 @@ $color-success: $android-green;
 $color-warning: $jaffa;
 $color-danger: $flame;
 
-$body-bg: $white;
+$body-bg: $alabaster;
 $body-color: $emperor;
 $link-color: $color-primary;
 $muted: $silver;

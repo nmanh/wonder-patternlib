@@ -28,7 +28,8 @@
   // panel special need difference look
 
   &_special {
-    background-color: $alabaster;
+    // background-color: $alabaster;
+    background-color: #fdfdfd;
 
     @include border($alabaster);
 
@@ -41,7 +42,8 @@
   }
 
   &_special-border {
-    background-color: $alabaster;
+    // background-color: $alabaster;
+    background-color: #fdfdfd;
 
     @include border($border-color);
 

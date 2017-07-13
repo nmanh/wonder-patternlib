@@ -4,6 +4,10 @@
   display: flex;
   // flex-wrap: wrap;
 
+  &_justify-end {
+    justify-content: flex-end;
+  }
+
   &_full-space {
     flex-grow: 1;
   }

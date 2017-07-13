@@ -29,7 +29,7 @@
     &.active {
       border-top-color: $color-primary;
       border-right-color: $border-color;
-      border-bottom-color: $white;
+      border-bottom-color: transparent;
       border-left-color: $border-color;
 
       &:first-child {

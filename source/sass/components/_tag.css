@@ -1,20 +1,12 @@
 .wtag {
   display: inline-block;
-  padding: $space-xs $space-sm;
 
-  color: $body-color;
-  white-space: nowrap;
-
-  background-color: $alabaster;
-  border: 1px solid $border-color;
-  border-radius: $space-md;
-
-  transition: background-color $transition-time $transition-effect;
+  color: $muted;
 
   &:hover {
-    color: $body-color;
+    color: $muted;
 
-    background-color: darken($alabaster, 5%);
+    text-decoration: underline;
   }
 }
 
@@ -27,4 +19,46 @@
   background-color: $white;
   border: 1px solid $color-primary;
   border-radius: $radius;
+}
+
+.wtag-3 {
+  padding: 1px $space-xs;
+
+  font-size: $font-size-h6;
+  color: $muted;
+
+  background-color: $border-color;
+  border-radius: $radius;
+}
+
+.wtag-4 {
+  display: inline-block;
+  padding: 2px $space-xs;
+
+  font-size: $font-size-h6;
+  // color: $white;
+
+  background-color: transparent;
+  border: 1px solid $body-color;
+  border-radius: $radius;
+
+  &.active {
+    border: 0;
+  }
+}
+
+.wtag-5 {
+  display: inline-block;
+  padding: 2px $space-xs;
+
+  font-size: $font-size-h6;
+  color: $white;
+
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: $radius;
+
+  &.active {
+    border: 0;
+  }
 }

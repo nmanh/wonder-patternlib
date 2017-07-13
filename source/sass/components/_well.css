@@ -3,3 +3,8 @@
 
   background-color: $alabaster;
 }
+
+.well-2 {
+  background-color: $white;
+  border-bottom: 1px solid $border-color;
+}

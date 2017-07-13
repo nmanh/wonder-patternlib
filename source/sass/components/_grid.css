@@ -1,12 +1,12 @@
 /* stylelint-disable */
 /**
  * Foundation for Sites by ZURB
- * Version 6.3.0
+ * Version 6.4.1
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 .row {
-  max-width: 62rem;
+  max-width: 62.5rem;
   margin-right: auto;
   margin-left: auto; }
   .row::before, .row::after {
@@ -36,6 +36,8 @@
     .row.expanded .row {
       margin-right: auto;
       margin-left: auto; }
+  .row:not(.expanded) .row {
+    max-width: none; }
   .row.gutter-small > .column, .row.gutter-small > .columns {
     padding-right: 0.625rem;
     padding-left: 0.625rem; }
@@ -824,15 +826,23 @@
   position: absolute !important;
   width: 1px;
   height: 1px;
+  padding: 0;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0); }
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  border: 0; }
 
 .show-on-focus:active, .show-on-focus:focus {
   position: static !important;
   width: auto;
   height: auto;
   overflow: visible;
-  clip: auto; }
+  clip: auto;
+  white-space: normal;
+  -webkit-clip-path: none;
+          clip-path: none; }
 
 .show-for-landscape,
 .hide-for-portrait {

@@ -12,6 +12,10 @@
     "rule-non-nested-empty-line-before": null,
     "no-unsupported-browser-features": null,
     "primer/selector-no-utility": null,
+    "selector-no-id": null,
+    "selector-no-type": null,
+    "selector-max-id": 0,
+    "selector-max-type": 0,
     "csstree/validator": {
       "ignore": ["size", "position", "clear", "triangle"]
     },
@@ -25,7 +29,7 @@
         "ie 11",
       ],
       "severity": "warning",
-      "ignore": ["outline", "flexbox", "css-clip-path", "css-masks"]
+      "ignore": ["outline", "flexbox", "css-clip-path", "css-masks", "css3-cursors"]
     }],
     "rule-empty-line-before": [
       "always-multi-line",

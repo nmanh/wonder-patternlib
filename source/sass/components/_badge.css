@@ -22,7 +22,7 @@
   &__dropdown {
     position: absolute;
     top: 100%;
-    right: -74px;
+    right: -$space-xxlg;
 
     width: ($base * 40);
     max-height: ($base * 60);
@@ -35,7 +35,7 @@
     transition: opacity $transition-time $transition-effect;
 
     @media (--medium-up) {
-      right: -158px;
+      // right: -158px;
 
       width: ($base * 60);
     }
