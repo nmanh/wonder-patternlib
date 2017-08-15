@@ -195,3 +195,7 @@ textarea {
 [role="button"] {
   cursor: pointer;
 }
+
+iframe {
+  vertical-align: bottom;
+}

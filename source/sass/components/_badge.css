@@ -44,13 +44,13 @@
   &__dropdown-header {
     padding: $space-sm $space-md;
 
-    background-color: $alabaster;
+    // background-color: $alabaster;
     border-bottom: 1px solid $border-color;
   }
 
   &__dropdown-item {
     display: flex;
-    padding: $space-md;
+    padding: $space-sm;
 
     color: $body-color;
 
@@ -60,8 +60,9 @@
       border-bottom: 1px solid $border-color;
     }
 
-    &:hover {
-      background-color: $alabaster;
+    &:hover,
+    &.active {
+      background-color: $wild-sand;
     }
   }
 

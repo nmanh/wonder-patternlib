@@ -648,6 +648,10 @@ textarea {
   cursor: pointer;
 }
 
+iframe {
+  vertical-align: bottom;
+}
+
 /* stylelint-disable */
 /**
  * Foundation for Sites by ZURB
@@ -1751,6 +1755,35 @@ textarea {
   }
 }
 
+.responsive-embed,
+.flex-video {
+  position: relative;
+  height: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+
+.responsive-embed iframe,
+.responsive-embed object,
+.responsive-embed embed,
+.responsive-embed video,
+.flex-video iframe,
+.flex-video object,
+.flex-video embed,
+.flex-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.responsive-embed.widescreen,
+.flex-video.widescreen {
+  padding-bottom: 56.25%;
+}
+
 .hide {
   display: none !important;
 }
@@ -1947,7 +1980,7 @@ textarea {
 
 .btn_small {
   padding: 0.25rem 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
 }
 
 .btn_block {
@@ -2262,7 +2295,7 @@ textarea {
 }
 
 .f__help-text {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-style: italic;
   color: #999;
 }
@@ -2342,7 +2375,7 @@ textarea.f__control {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 20;
+  z-index: 100;
   background-color: #02a876;
 }
 
@@ -2439,7 +2472,7 @@ textarea.f__control {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 10;
+  z-index: 20;
   background-color: rgba(81, 79, 79, 0.7);
 }
 
@@ -2662,7 +2695,7 @@ textarea.f__control {
 }
 
 .switch__input:checked ~ .switch__paddle {
-  background-color: #8cc152;
+  background-color: #5bc0eb;
 }
 
 .switch__input:checked ~ .switch__paddle::after {
@@ -2678,11 +2711,11 @@ textarea.f__control {
 .switch__paddle {
   display: inline-block;
   width: 3rem;
-  height: 2rem;
+  height: 1.5rem;
   margin-bottom: 0;
   cursor: pointer;
   background-color: #999;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   -webkit-box-shadow: inset 0.0625rem 0.0625rem 0.0625rem 0.0625rem rgba(81, 79, 79, 0.4);
           box-shadow: inset 0.0625rem 0.0625rem 0.0625rem 0.0625rem rgba(81, 79, 79, 0.4);
   -webkit-transition: background-color 0.25s ease-in;
@@ -2703,6 +2736,16 @@ textarea.f__control {
   transition: -webkit-transform 0.25s ease-in;
   transition: transform 0.25s ease-in;
   transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in;
+}
+
+.switch_small .switch__paddle {
+  width: 2rem;
+  height: 1rem;
+}
+
+.switch_small .switch__paddle::after {
+  width: 1rem;
+  height: 1rem;
 }
 
 .section-header {
@@ -2922,7 +2965,7 @@ textarea.f__control {
 }
 
 .sidenav {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
 }
 
 .sidenav__header {
@@ -3103,7 +3146,7 @@ textarea.f__control {
   right: -0.5rem;
   height: 1rem;
   padding: 0 0.3125rem;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: #fff;
   text-align: center;
   pointer-events: none;
@@ -3133,7 +3176,6 @@ textarea.f__control {
 
 .badge__dropdown-header {
   padding: 0.5rem 1rem;
-  background-color: #f8f8f8;
   border-bottom: 0.0625rem solid #e7e5e5;
 }
 
@@ -3141,7 +3183,7 @@ textarea.f__control {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem;
+  padding: 0.5rem;
   color: #514f4f;
   -webkit-transition: background-color 0.25s ease-in;
   transition: background-color 0.25s ease-in;
@@ -3151,8 +3193,8 @@ textarea.f__control {
   border-bottom: 0.0625rem solid #e7e5e5;
 }
 
-.badge__dropdown-item:hover {
-  background-color: #f8f8f8;
+.badge__dropdown-item:hover, .badge__dropdown-item.active {
+  background-color: #f5f5f5;
 }
 
 .badge__dropdown-thumbnail {
@@ -3227,7 +3269,7 @@ textarea.f__control {
 .wtag-4 {
   display: inline-block;
   padding: 0.125rem 0.25rem;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   background-color: transparent;
   border: 0.0625rem solid #514f4f;
   border-radius: 0.1875rem;
@@ -3240,7 +3282,7 @@ textarea.f__control {
 .wtag-5 {
   display: inline-block;
   padding: 0.125rem 0.25rem;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: #fff;
   background-color: transparent;
   border: 0.0625rem solid #fff;
@@ -3324,7 +3366,7 @@ textarea.f__control {
   top: -0.25rem;
   left: 0.5rem;
   padding: 0 0.3125rem;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: #fff;
   pointer-events: none;
   background-color: #f07736;
@@ -3338,7 +3380,6 @@ textarea.f__control {
 .rope img {
   /* stylelint-disable-line */
   display: block;
-  margin-bottom: 0.5rem;
 }
 
 .rope__content-truncate {
@@ -3353,20 +3394,27 @@ textarea.f__control {
   /* stylelint-disable-line */
 }
 
-.rope__content-truncate > * {
+.rope__content-truncate * {
   /* stylelint-disable-line */
   margin-bottom: 0;
+}
+
+.rope__content-truncate p:not(:last-child) {
+  /* stylelint-disable-line */
+  margin-bottom: 1.4rem;
 }
 
 .rope__btn {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: 10;
   padding: 0 0 0 0.25rem;
   background-color: #fff;
   border: 0;
-  -webkit-box-shadow: -0.5rem 0 0.5rem rgba(255, 255, 255, 0.85);
-          box-shadow: -0.5rem 0 0.5rem rgba(255, 255, 255, 0.85);
+  border-top-left-radius: 0.1875rem;
+  -webkit-box-shadow: 0 0 0.4375rem 0.3125rem #fff;
+          box-shadow: 0 0 0.4375rem 0.3125rem #fff;
 }
 
 .mask {
@@ -3522,6 +3570,11 @@ textarea.f__control {
 /* Wrap */
 .txt-pre-wrap {
   white-space: pre-wrap;
+}
+
+/* Word break */
+.txt-wrap {
+  overflow-wrap: break-word;
 }
 
 .list-unstyled {
@@ -4597,6 +4650,12 @@ textarea.f__control {
           align-items: center;
 }
 
+.lf_align-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .lf_wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -4749,6 +4808,66 @@ textarea.f__control {
 
 .rdw-editor-toolbar {
   border-color: #e7e5e5 !important;
+}
+
+/* review essay editor */
+.ree__toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 0.375rem 0.3125rem;
+  margin-bottom: 0.3125rem;
+  font-size: 0.9375rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #fff;
+  border: 0.0625rem solid #f1f1f1;
+  border-radius: 0.125rem;
+}
+
+.ree .draftJsUndoPlugin__button__3Vugn, .ree__option-btn {
+  display: inline-block;
+  min-width: 1.5625rem;
+  padding: 0.3125rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  background-color: #fff;
+  border: 0.0625rem solid #f1f1f1;
+  border-radius: 0.125rem;
+}
+
+.ree .draftJsUndoPlugin__button__3Vugn:hover, .ree__option-btn:hover {
+  -webkit-box-shadow: 0.0625rem 0.0625rem 0 #bfbdbd;
+          box-shadow: 0.0625rem 0.0625rem 0 #bfbdbd;
+}
+
+.ree .draftJsUndoPlugin__button__3Vugn:disabled, .ree__option-btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.ree .DraftEditor-root {
+  padding: 0.5rem;
+  border: 0.0625rem solid #f1f1f1;
+  border-radius: 0.125rem;
+}
+
+.public-DraftStyleDefault-block {
+  margin: 0 0 1.4rem !important;
+  /* stylelint-disable-line */
+}
+
+.public-DraftEditor-content > div > div:last-child .public-DraftStyleDefault-block {
+  /* stylelint-disable-line */
+  margin-bottom: 0 !important;
 }
 
 @-webkit-keyframes fadeInDown {from {opacity: 0;-webkit-transform: translate3d(0, -100%, 0);transform: translate3d(0, -100%, 0);}to {opacity: 1;-webkit-transform: none;transform: none;}}

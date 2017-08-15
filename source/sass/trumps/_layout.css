@@ -16,6 +16,10 @@
     align-items: center;
   }
 
+  &_align-start {
+    align-items: flex-start;
+  }
+
   // &_no-wrap {
   //   flex-wrap: nowrap;
   // }

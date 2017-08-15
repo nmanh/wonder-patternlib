@@ -11,8 +11,7 @@
 }
 
 .txt-small {
-  // font-size: $font-size-h6;
-  font-size: 14px;
+  font-size: $font-size-h6;
 }
 
 .txt-xsmall {
@@ -121,4 +120,9 @@
 
 .txt-pre-wrap {
   white-space: pre-wrap;
+}
+
+/* Word break */
+.txt-wrap {
+  overflow-wrap: break-word;
 }

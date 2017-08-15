@@ -29,7 +29,7 @@
         "ie 11",
       ],
       "severity": "warning",
-      "ignore": ["outline", "flexbox", "css-clip-path", "css-masks", "css3-cursors"]
+      "ignore": ["outline", "flexbox", "css-clip-path", "css-masks", "css3-cursors", "wordwrap", "word-break"]
     }],
     "rule-empty-line-before": [
       "always-multi-line",

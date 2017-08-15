@@ -15,7 +15,7 @@
 $base: 8px;
 $type-scale: 1.25;
 $line-height-base: 1.4;
-$row-width: 992px;
+$row-width: 1000px;
 
 /* 2. Colors */
 $emperor: #514f4f;
@@ -23,6 +23,7 @@ $white: #fff;
 $white-2: #fdfdfd;
 $silver: #999;
 $mercury: #e7e5e5;
+$wild-sand: #f5f5f5;
 
 $jade: #02a876;
 $jade-lighten: #03bd85;
@@ -63,7 +64,8 @@ $font-size-h2: ($font-size-base * $type-scale * $type-scale * $type-scale);
 $font-size-h3: ($font-size-base * $type-scale * $type-scale);
 $font-size-h4: ($font-size-base * $type-scale);
 $font-size-h5: $font-size-base;
-$font-size-h6: ($font-size-base / $type-scale);
+$font-size-h6: 14px;
+$font-size-tiny: ($font-size-base / $type-scale);
 
 $font-weight-base: 300;
 $font-weight-normal: 400;
@@ -84,7 +86,7 @@ $space-xxlg: ($base * 6);
 
 /* 6. Border */
 $radius: 3px;
-$radius-big: $base;
+$radius-big: ($base * 1.5);
 $border-color: $mercury;
 
 /* 7. Misc */
