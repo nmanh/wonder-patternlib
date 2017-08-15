@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1499915885435,
+  "timestamp": 1500950017249,
   "graph": {
     "options": {
       "directed": true,
@@ -350,6 +350,24 @@
       },
       {
         "v": "02-molecules/panel/panel~warning.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-molecules/sidenav/sidenav.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-molecules/switch/switch.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-molecules/switch/switch~small.json",
         "value": {
           "compileState": "clean"
         }
@@ -747,6 +765,11 @@
       {
         "v": "02-molecules/panel/panel~warning.json",
         "w": "02-molecules/panel/panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-molecules/switch/switch~small.json",
+        "w": "02-molecules/switch/switch.mustache",
         "value": {}
       },
       {
