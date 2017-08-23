@@ -3002,6 +3002,14 @@ textarea.f__control {
   font-weight: 700;
 }
 
+.sidenav__collapse-body {
+  display: none;
+}
+
+.sidenav__collapse-body.active {
+  display: block;
+}
+
 .carousel {
   position: relative;
 }
@@ -3291,6 +3299,34 @@ textarea.f__control {
 
 .wtag-5.active {
   border: 0;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+}
+
+.table th, .table td {
+  /* stylelint-disable-line */
+  padding: 0.5rem;
+  vertical-align: top;
+  border-top: 0.0625rem solid #e7e5e5;
+}
+
+.table thead th {
+  /* stylelint-disable-line */
+  vertical-align: bottom;
+  border-bottom: 0.125rem solid #e7e5e5;
+}
+
+.table tbody + tbody {
+  /* stylelint-disable-line */
+  border-top: 0.125rem solid #e7e5e5;
+}
+
+.table .table {
+  background-color: #fff;
 }
 
 .app-mobile-header {

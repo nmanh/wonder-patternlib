@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1502789495730,
+  "timestamp": 1503482303820,
   "graph": {
     "options": {
       "directed": true,
@@ -355,6 +355,12 @@
         }
       },
       {
+        "v": "02-molecules/sidenav/sidenav-dropdown.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "02-molecules/sidenav/sidenav.mustache",
         "value": {
           "compileState": "clean"
@@ -368,6 +374,12 @@
       },
       {
         "v": "02-molecules/switch/switch~small.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-molecules/table/table.mustache",
         "value": {
           "compileState": "clean"
         }
