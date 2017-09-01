@@ -1,0 +1,51 @@
+@mixin sidenav-2-item {
+  position: relative;
+
+  display: block;
+  padding: $space-md 0;
+
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  color: $muted;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: $space-lg;
+    height: 1px;
+    content: "";
+
+    background-color: $border-color;
+  }
+}
+
+.sidenav-2 {
+  &__title {
+    margin-bottom: 0;
+
+    line-height: 1;
+
+    @include sidenav-2-item;
+  }
+
+  &__item {
+    @include sidenav-2-item;
+
+    &:hover {
+      color: $body-color;
+    }
+  }
+
+  &__sub-item {
+    display: block;
+    margin-bottom: $space-md;
+
+    color: $muted;
+
+    &:hover {
+      color: $body-color;
+    }
+  }
+}

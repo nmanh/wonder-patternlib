@@ -62,7 +62,7 @@
 
     &:hover,
     &.active {
-      background-color: $wild-sand;
+      background-color: $body-bg;
     }
   }
 

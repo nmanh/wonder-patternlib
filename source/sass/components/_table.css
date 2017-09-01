@@ -1,0 +1,24 @@
+.table {
+  width: 100%;
+  max-width: 100%;
+  background-color: $white;
+
+  th, td { /* stylelint-disable-line */
+    padding: $space-sm;
+    vertical-align: top;
+    border-top: 1px solid $border-color;
+  }
+
+  thead th { /* stylelint-disable-line */
+    vertical-align: bottom;
+    border-bottom: 2px solid $border-color;
+  }
+
+  tbody + tbody { /* stylelint-disable-line */
+    border-top: 2px solid $border-color;
+  }
+
+  .table {
+    background-color: $white;
+  }
+}

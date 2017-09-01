@@ -12,15 +12,21 @@
 @import "nav-tab-h";
 @import "nav";
 @import "sidenav";
-@import "carousel";
-@import "carousel-2";
+@import "sidenav-2";
+
+/* @import "carousel"; */
+
+/* @import "carousel-2"; */
+
 @import "divider";
 @import "loader";
 @import "badge";
 @import "well";
 @import "tag";
+@import "table";
 @import "mobile-header";
 @import "mobile-nav";
 @import "rope";
 @import "mask";
 @import "heading-section";
+@import "st";

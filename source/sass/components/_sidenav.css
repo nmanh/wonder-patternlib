@@ -41,4 +41,12 @@
       font-weight: $font-weight-bold;
     }
   }
+
+  &__collapse-body {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
 }

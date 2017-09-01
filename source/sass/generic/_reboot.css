@@ -20,6 +20,8 @@
 
 /* 1. General */
 html {
+  height: 100%;
+
   box-sizing: border-box;
 
   font-size: $font-size-base;
@@ -37,6 +39,7 @@ html {
 
 /* 2. Body */
 body {
+  height: 100%;
   margin: 0;
   overflow-y: scroll;
 
