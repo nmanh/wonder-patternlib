@@ -126,3 +126,8 @@
 .txt-wrap {
   overflow-wrap: break-word;
 }
+
+/* Reset line height */
+.txt-reset-lh {
+  line-height: 1;
+}

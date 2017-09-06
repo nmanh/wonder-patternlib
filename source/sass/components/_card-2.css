@@ -1,0 +1,42 @@
+.card-2 {
+  position: relative;
+
+  display: flex;
+  size: 112px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $border-color;
+  border: 1px solid $border-color;
+
+  &.active {
+    background-color: transparent;
+
+    .card-2__title {
+      color: $body-color;
+    }
+
+    .card-2__addon {
+      color: $color-primary;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+
+    font-size: $font-size-h1;
+    color: $white;
+  }
+
+  &__addon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding: $space-sm;
+
+    text-align: center;
+  }
+}

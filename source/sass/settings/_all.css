@@ -18,13 +18,15 @@ $line-height-base: 1.4;
 $row-width: 1000px;
 
 /* 2. Colors */
-$emperor: #514f4f;
+$emperor: #535353;
 $white: #fff;
 $white-2: #fdfdfd;
 $silver: #999;
-$mercury: #e7e5e5;
+// $mercury: #e7e5e5;
+$alto: #ddd;
+$boulder: #757575;
 
-$jade: #02a876;
+$jade: #1dd069;
 $jade-lighten: #03bd85;
 
 $blue-jeans: #5bc0eb;
@@ -32,7 +34,7 @@ $flame: #e55934;
 $android-green: #8cc152;
 $jaffa: #f07736;
 $tan-hide: #f7945f;
-$alabaster: #f8f8f8;
+$alabaster: #f7f7f7;
 
 $color-primary: $jade;
 $color-secondary: $emperor;
@@ -86,7 +88,7 @@ $space-xxlg: ($base * 6);
 /* 6. Border */
 $radius: 3px;
 $radius-big: ($base * 1.5);
-$border-color: $mercury;
+$border-color: $alto;
 
 /* 7. Misc */
 $opacity: 0.6;

@@ -6,7 +6,9 @@
 @import "panel";
 @import "modal";
 @import "switch";
-@import "section-header";
+
+/* @import "section-header"; */
+
 @import "nav-tab";
 @import "nav-tab-v";
 @import "nav-tab-h";
@@ -30,3 +32,5 @@
 @import "mask";
 @import "heading-section";
 @import "st";
+@import "card";
+@import "card-2";

@@ -3,34 +3,26 @@
 
   text-align: center;
 
-  background-color: $color-primary;
+  // background-color: $white;
 
   &__link {
-    flex: 1;
-    padding: ($space-sm + 2) $space-xs $space-sm;
+    // flex: 1;
+    // padding: ($space-sm + 2) $space-xs $space-sm;
 
-    font-weight: $font-weight-normal;
+    font-weight: $font-weight-bold;
     line-height: 1;
+    color: $body-color;
+    text-transform: uppercase;
 
-    color: $white;
+    transition: color $transition-time $transition-effect;
 
-    transition: background-color $transition-time $transition-effect;
-
-    // &:not(:last-child) {
-    //   margin-right: $space-sm;
-    // }
+    &:not(:last-child) {
+      margin-right: $space-lg;
+    }
 
     &.active,
     &:hover {
-      color: $white;
-
-      background-color: $jade-lighten;
+      color: $color-primary;
     }
-  }
-
-  &__text {
-    margin-top: $space-sm;
-
-    font-size: 14px;
   }
 }

@@ -1,5 +1,5 @@
 .st {
-  $baseWidth: 200px;
+  $baseWidth: 176px;
   $sidebarWidth: ($baseWidth + $space-lg);
 
   position: relative;
@@ -79,8 +79,10 @@
   &__content {
     position: relative;
 
-    min-height: 100%;
+    display: flex;
+    min-height: 100vh;
     margin-left: $space-lg;
+    flex-direction: column;
 
     background-color: $white;
     transition: transform $transition-time $transition-effect;
@@ -88,5 +90,14 @@
     @media (--large-up) {
       margin-left: $sidebarWidth;
     }
+  }
+
+  &__content-body {
+    flex: 1;
+  }
+
+  &__content-footer {
+    padding: $space-lg 0;
+    background-color: $color-primary;
   }
 }

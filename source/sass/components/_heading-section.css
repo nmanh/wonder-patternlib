@@ -1,23 +1,29 @@
 .h {
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid $border-color;
+
+  &__addon {
+    padding: $space-sm $space-md;
+    margin-right: $space-md;
+
+    font-size: $font-size-h3;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+    text-align: center;
+
+    background-color: $border-color;
+    border-radius: $radius $radius 0 0;
+  }
+
   &__content {
     position: relative;
 
     display: inline-block;
-    padding-bottom: $space-sm;
     margin-bottom: 0;
 
     font-size: $font-size-h4;
-
-    &::after {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-
-      height: $space-xs;
-      content: "";
-
-      background-color: $color-primary;
-    }
+    font-weight: $font-weight-normal;
   }
 }

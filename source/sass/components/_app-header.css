@@ -1,9 +1,9 @@
 .app-header {
   &__logo {
-    color: $white;
+    color: $color-primary;
 
     &:hover {
-      color: $white;
+      color: $color-primary;
     }
   }
 
@@ -14,9 +14,8 @@
     left: 0;
     z-index: $z-index-max;
 
-    // padding: $space-xs 0;
-
-    background-color: $color-primary;
+    background-color: $white;
+    box-shadow: 0 2px 4px 0 rgba($body-color, 0.5);
   }
 
   &__nav {

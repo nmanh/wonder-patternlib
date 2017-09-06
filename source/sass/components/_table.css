@@ -3,6 +3,10 @@
   max-width: 100%;
   background-color: $white;
 
+  th { /* stylelint-disable-line */
+    text-align: left;
+  }
+
   th, td { /* stylelint-disable-line */
     padding: $space-sm;
     vertical-align: top;
@@ -11,7 +15,8 @@
 
   thead th { /* stylelint-disable-line */
     vertical-align: bottom;
-    border-bottom: 2px solid $border-color;
+    // border-bottom: 2px solid $border-color;
+    border-top: 0;
   }
 
   tbody + tbody { /* stylelint-disable-line */

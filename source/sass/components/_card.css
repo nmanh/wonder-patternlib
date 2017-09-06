@@ -1,0 +1,39 @@
+.card {
+  position: relative;
+
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+
+  border: 2px solid $boulder;
+
+  &__content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 $space-md $space-md;
+
+    @media (--medium-up) {
+      padding: 0 $space-md $space-lg $space-xlg;
+    }
+  }
+
+  &__addon {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+
+    display: flex;
+    flex-direction: column;
+    size: 70px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $color-primary;
+
+    @media (--medium-up) {
+      size: 94px;
+    }
+  }
+}
