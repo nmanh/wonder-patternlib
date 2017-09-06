@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1503482303820,
+  "timestamp": 1504664990421,
   "graph": {
     "options": {
       "directed": true,
@@ -219,7 +219,25 @@
         }
       },
       {
-        "v": "02-molecules/carousel/carousel-2.mustache",
+        "v": "02-molecules/cards/card-2.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-molecules/cards/card-2~unlock.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-molecules/cards/card.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-molecules/carousel/_carousel-2.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/05-pages-edit-essay/05-pages-edit-essay.rendered.html",
@@ -352,6 +370,20 @@
         "v": "02-molecules/panel/panel~warning.json",
         "value": {
           "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-molecules/sidebar-transition/sidebar-transition.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-molecules/sidenav/sidenav-2.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-molecules-sidebar-transition-sidebar-transition/02-molecules-sidebar-transition-sidebar-transition.rendered.html",
+          "lineagePattern": "molecules-sidebar-transition"
         }
       },
       {
@@ -494,6 +526,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-organisms-edit-essay-_edit-essay-feeds/03-organisms-edit-essay-_edit-essay-feeds.rendered.html",
           "lineagePattern": "organisms-edit-essay-feeds"
+        }
+      },
+      {
+        "v": "04-utilities/border/borders.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -745,6 +783,11 @@
         "value": {}
       },
       {
+        "v": "02-molecules/cards/card-2~unlock.json",
+        "w": "02-molecules/cards/card-2.mustache",
+        "value": {}
+      },
+      {
         "v": "02-molecules/panel/panel~danger.json",
         "w": "02-molecules/panel/panel.mustache",
         "value": {}
@@ -870,6 +913,11 @@
         "value": {}
       },
       {
+        "v": "02-molecules/sidebar-transition/sidebar-transition.mustache",
+        "w": "02-molecules/sidenav/sidenav-2.mustache",
+        "value": {}
+      },
+      {
         "v": "03-organisms/question/question.mustache",
         "w": "03-organisms/question/_question-header.mustache",
         "value": {}
@@ -906,7 +954,7 @@
       },
       {
         "v": "05-pages/edit-essay.mustache",
-        "w": "02-molecules/carousel/carousel-2.mustache",
+        "w": "02-molecules/carousel/_carousel-2.mustache",
         "value": {}
       },
       {

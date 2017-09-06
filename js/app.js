@@ -1,5 +1,10 @@
-;(function ($) {
+function toggle(trigger, target, className) {
+  trigger.on('click', function () {
+    target.toggleClass(className);
+  });
+}
 
+(function ($) {
   $('#carousel-2').slick({
     arrows: false,
     slidesToShow: 1,
@@ -15,13 +20,15 @@
     asNavFor: $('#carousel-2')
   });
 })(jQuery);(function ($) {
-  // Sidenav collapse
   var activate = $('#activate');
   var content = $('#content');
+  var activate2 = $('#s2-activate');
+  var content2 = $('#s2-content');
 
-  if (activate) {
-    activate.on('click', function () {
-      content.toggleClass('active');
-    });
-  }
+  toggle(activate, content, 'active');
+  toggle(activate2, content2, 'active');
+})(jQuery);(function ($) {
+  var btnMenu = $('.st__menu-toggle');
+  var sidebarTransition = $('.st');
+  toggle(btnMenu, sidebarTransition, 'show');
 })(jQuery);
