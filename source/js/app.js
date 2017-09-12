@@ -35,4 +35,24 @@ function toggle(trigger, target, className) {
   var mobileNavBtn = $('.app-mobile-header__btn');
   var mobileNav = $('.app-mobile-header__list');
   toggle(mobileNavBtn, mobileNav, 'show');
+})(jQuery);(function ($) {
+  $('.f__control-2').map(function (index, inputEl) {
+    console.log(inputEl);
+    if (inputEl.value.trim() !== '') {
+      inputEl.addClass('f__control-2_filled');
+    }
+
+    inputEl.addEventListener('focus', onInputFocus);
+    inputEl.addEventListener('blur', onInputBlur);
+  });
+
+  function onInputFocus(ev) {
+    $(ev.target).addClass('f__control-2_filled');
+  }
+
+  function onInputBlur(ev) {
+    if (ev.target.value.trim() === '') {
+      $(ev.target).removeClass('f__control-2_filled');
+    }
+  }
 })(jQuery);

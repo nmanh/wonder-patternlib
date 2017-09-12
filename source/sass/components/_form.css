@@ -115,12 +115,70 @@
     border: 0;
     border-radius: $radius;
   }
-}
 
-// allow textarea auto span
-// textarea.f__control, select[multiple] { /* stylelint-disable-line */
-//   height: auto;
-// }
+  &__group {
+    position: relative;
+  }
+
+  &__control-2 {
+    display: block;
+    width: 100%;
+    padding: $space-sm $space-sm $space-sm 0;
+
+    border-top: 1px solid transparent;
+    border-right: 0;
+    border-bottom: 1px solid $border-color;
+    border-left: 0;
+
+    &:focus {
+      border-bottom-color: $color-info;
+      outline: none;
+    }
+
+    &[disabled] {
+      background-color: $border-color;
+      border-radius: $radius;
+    }
+
+    label { /* stylelint-disable-line */
+      margin-bottom: 0;
+    }
+
+    &_filled {
+      & ~ label { /* stylelint-disable-line */
+        transform: translate3d(0, (-$space-md * $line-height-base), 0) scale3d(0.8, 0.8, 1);
+      }
+    }
+
+    &_error {
+      color: $color-danger;
+
+      border-bottom-color: $color-danger;
+
+      &:focus {
+        border-bottom-color: $color-danger;
+      }
+
+      & ~ label { /* stylelint-disable-line */
+        color: $color-danger;
+      }
+    }
+  }
+
+  &__label-2 {
+    position: absolute;
+    top: $space-sm;
+    left: 0;
+
+    font-weight: $font-weight-normal;
+    color: $muted;
+
+    pointer-events: none;
+    transition: transform $transition-time $transition-effect;
+    transform-origin: 0 0;
+    will-change: transform;
+  }
+}
 
 select.f__control:not([size]):not([multiple]) { /* stylelint-disable-line */
   height: ($font-size-base * $line-height-base + ($space-sm * 2) + 2);
