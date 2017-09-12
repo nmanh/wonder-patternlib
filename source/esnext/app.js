@@ -34,3 +34,8 @@ function toggle(trigger, target, className) {
   const sidebarTransition = $('.st')
   toggle(btnMenu, sidebarTransition, 'show')
 })(jQuery)
+;(function ($) {
+  const mobileNavBtn = $('.app-mobile-header__btn')
+  const mobileNav = $('.app-mobile-header__list')
+  toggle(mobileNavBtn, mobileNav, 'show')
+})(jQuery)

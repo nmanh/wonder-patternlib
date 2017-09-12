@@ -24,7 +24,7 @@
 .wtag-3 {
   padding: 1px $space-xs;
 
-  font-size: $font-size-tiny;
+  font-size: $font-size-h6;
   color: $muted;
 
   background-color: $border-color;

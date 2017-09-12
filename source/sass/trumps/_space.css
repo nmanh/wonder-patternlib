@@ -5,12 +5,12 @@
 
 // margin and padding values array
 $space-values : (
-  xs: 4,
-  sm: 8,
-  md: 16,
-  lg: 24,
-  xlg: 32,
-  xxlg: 56
+  xs: $space-xs,
+  sm: $space-sm,
+  md: $space-md,
+  lg: $space-lg,
+  xlg: $space-xlg,
+  xxlg: $space-xxlg
 );
 
 // margin and padding shorthands
@@ -47,18 +47,18 @@ $grid-breakpoints: (
       @each $attr-short, $attr-long in $prefixes {
         @each $alias, $value in $values {
           .#{$attr-short}#{$alias} {
-            #{$attr-long}: #{$value}#{'px'};
+            #{$attr-long}: #{$value};
           }
         }
       }
     }
     // breakpoint values that not equal to 0
     @else {
-      @media screen and (max-width: $breakpoint-value) {
+      @media screen and (min-width: $breakpoint-value) {
         @each $attr-short, $attr-long in $prefixes {
           @each $alias, $value in $values {
             .#{$breakpoint-name}-#{$attr-short}#{$alias} {
-              #{$attr-long}: #{$value}#{'px'};
+              #{$attr-long}: #{$value};
             }
           }
         }

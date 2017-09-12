@@ -1,0 +1,5 @@
+.v-divider {
+  size: 1px auto;
+
+  background-color: $border-color;
+}

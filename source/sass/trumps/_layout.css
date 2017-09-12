@@ -8,6 +8,10 @@
     justify-content: flex-end;
   }
 
+  &_justify-center {
+    justify-content: center;
+  }
+
   &_full-space {
     flex-grow: 1;
   }
@@ -18,6 +22,10 @@
 
   &_align-start {
     align-items: flex-start;
+  }
+
+  &_align-stretch {
+    align-items: stretch;
   }
 
   // &_no-wrap {

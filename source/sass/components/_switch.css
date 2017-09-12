@@ -19,7 +19,7 @@
 
   &__paddle {
     display: inline-block;
-    size: $space-xxlg $space-lg;
+    size: $space-xlg $space-lg;
     margin-bottom: 0;
 
     cursor: pointer;
@@ -45,7 +45,7 @@
 
   &_small {
     .switch__paddle {
-      size: $space-xlg $space-md;
+      size: $space-lg $space-md;
 
       &::after {
         size: $space-md;

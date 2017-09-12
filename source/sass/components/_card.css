@@ -14,9 +14,9 @@
     left: 0;
     padding: 0 $space-md $space-md;
 
-    @media (--medium-up) {
-      padding: 0 $space-md $space-lg $space-xlg;
-    }
+    // @media (--large-up) {
+    //   padding: 0 $space-md $space-lg $space-xlg;
+    // }
   }
 
   &__addon {
@@ -32,8 +32,20 @@
 
     background-color: $color-primary;
 
-    @media (--medium-up) {
+    @media (--large-up) {
       size: 94px;
     }
+  }
+
+  &__addon-sub-title {
+    font-size: $font-size-h6;
+    color: $white;
+  }
+
+  &__addon-title {
+    font-size: $font-size-h1;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+    color: $white;
   }
 }

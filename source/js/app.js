@@ -31,4 +31,8 @@ function toggle(trigger, target, className) {
   var btnMenu = $('.st__menu-toggle');
   var sidebarTransition = $('.st');
   toggle(btnMenu, sidebarTransition, 'show');
+})(jQuery);(function ($) {
+  var mobileNavBtn = $('.app-mobile-header__btn');
+  var mobileNav = $('.app-mobile-header__list');
+  toggle(mobileNavBtn, mobileNav, 'show');
 })(jQuery);

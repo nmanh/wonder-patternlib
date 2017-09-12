@@ -1,45 +1,15 @@
 .mobile-nav {
-  display: flex;
+  background-color: $white;
 
   &__link {
-    padding: $space-xs;
-    flex: 1;
+    display: block;
+    padding: $space-sm 0;
 
-    color: $white;
-    text-align: center;
+    color: $body-color;
 
-    background-color: $color-primary;
-
-    &:focus {
-      color: $white;
-    }
-
+    &:focus,
     &.active {
-      background-color: lighten($color-primary, 4%);
+      color: $color-primary;
     }
-  }
-
-  &__title {
-    // font-size: $font-size-h6;
-    font-size: 12px;
-  }
-
-  &__icon-wrap {
-    position: relative;
-    display: inline-block;
-  }
-
-  &__icon-addon {
-    position: absolute;
-    top: -4px;
-    left: 8px;
-    padding: 0 5px;
-
-    font-size: $font-size-h6;
-    color: $white;
-
-    pointer-events: none;
-    background-color: $color-warning;
-    border-radius: 8px;
   }
 }

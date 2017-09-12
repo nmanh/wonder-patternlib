@@ -50,8 +50,13 @@
 
   &__menu-toggle {
     position: absolute;
-    top: 0;
+    top: $space-md;
     right: 0;
+
+    width: $space-lg;
+
+    background-color: transparent;
+    border: 0;
 
     @media (--large-up) {
       display: none;
@@ -80,7 +85,7 @@
     position: relative;
 
     display: flex;
-    min-height: 100vh;
+    // min-height: 100vh;
     margin-left: $space-lg;
     flex-direction: column;
 

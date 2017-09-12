@@ -2,10 +2,10 @@
   position: relative;
 
   display: block;
-  padding: $space-md 0;
+  padding: $space-md 0 $space-md $space-sm;
 
-  font-size: $font-size-h6;
-  font-weight: $font-weight-normal;
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
   color: $muted;
 
   &::before {
@@ -13,7 +13,7 @@
     top: 0;
     left: 0;
 
-    width: $space-lg;
+    width: $space-md;
     height: 1px;
     content: "";
 
@@ -33,7 +33,8 @@
   &__item {
     @include sidenav-2-item;
 
-    &:hover {
+    &:hover,
+    &.active {
       color: $body-color;
     }
   }
@@ -42,11 +43,21 @@
     display: block;
     margin-bottom: $space-md;
 
-    font-size: $font-size-h6;
+    // font-size: $font-size-h6;
+    font-weight: $font-weight-bold;
     color: $muted;
 
-    &:hover {
+    &:hover,
+    &.active {
       color: $body-color;
+    }
+  }
+
+  &__collapse-body {
+    display: none;
+
+    &.active {
+      display: block;
     }
   }
 }

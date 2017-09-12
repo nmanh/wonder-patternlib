@@ -21,6 +21,7 @@
 /* @import "carousel-2"; */
 
 @import "divider";
+@import "v-divider";
 @import "loader";
 @import "badge";
 @import "well";

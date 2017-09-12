@@ -37,6 +37,7 @@
 
     padding: $space-sm;
 
+    color: $body-color;
     text-align: center;
   }
 }

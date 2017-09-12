@@ -1,15 +1,21 @@
-Based on [8 point grid](https://spec.fm/specifics/8-pt-grid)
+Based on [Geometric progression](https://en.wikipedia.org/wiki/Geometric_progression)
 
-extra small - 4px (xs)
+Base value (14px / 2) = 7px
 
-small - 8px (sm)
+extra small - 3.5px (xs)
 
-medium - 16px (md)
+small - 7px (sm)
 
-large - 24px (lg)
+medium - 14px (md)
 
-extra large - 32px (xlg)
+large - 28px (lg)
 
-xxlarge - 56px (xxlg)
+extra large - 56px (xlg)
+
+xxlarge - 112px (xxlg)
 
 Avaiable properties: **margin-[top|right|bottom|left], padding**
+
+Resource:
+
+* [Space in design systems](https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62)

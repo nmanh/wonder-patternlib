@@ -1,8 +1,10 @@
 .f {
+  width: 100%;
+
   &__control {
     display: block;
-    size: 100% $space-xlg;
-    padding: $space-xs $space-sm;
+    width: 100%;
+    padding: $space-sm;
 
     background-color: $white;
     border-radius: $radius;
@@ -74,8 +76,12 @@
       left: 0;
     }
 
-    &.disabled label { /* stylelint-disable-line */
-      cursor: not-allowed;
+    &.disabled {
+      color: $muted;
+
+      label { /* stylelint-disable-line */
+        cursor: not-allowed;
+      }
     }
 
     &_inline {
@@ -112,6 +118,10 @@
 }
 
 // allow textarea auto span
-textarea.f__control { /* stylelint-disable-line */
-  height: auto;
+// textarea.f__control, select[multiple] { /* stylelint-disable-line */
+//   height: auto;
+// }
+
+select.f__control:not([size]):not([multiple]) { /* stylelint-disable-line */
+  height: ($font-size-base * $line-height-base + ($space-sm * 2) + 2);
 }

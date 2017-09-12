@@ -31,7 +31,7 @@ gulp.task('styles', () => {
     triangle    = require('postcss-triangle'),
     processors  = [
       pxtorem({
-        rootValue: 16,
+        rootValue: 14,
         replace: true,
         propWhiteList: [],
         selectorBlackList: [/^html$/],

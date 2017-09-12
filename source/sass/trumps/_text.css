@@ -6,6 +6,10 @@
   font-size: $font-size-h2;
 }
 
+.txt-fz-h3 {
+  font-size: $font-size-h3;
+}
+
 .txt-large {
   font-size: $font-size-h4;
 }
@@ -81,10 +85,6 @@
 }
 
 /* Font weight */
-
-.txt-fw-thin {
-  font-weight: $font-weight-base;
-}
 
 .txt-fw-normal {
   font-weight: $font-weight-normal;

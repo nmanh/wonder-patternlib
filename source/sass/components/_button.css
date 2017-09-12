@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  padding: $space-xs $space-sm;
+  padding: $space-sm $space-md;
 
   line-height: $line-height-base;
   color: $body-color;
@@ -9,17 +9,17 @@
   vertical-align: middle;
 
   cursor: pointer;
-  background-color: darken($alabaster, 5%);
+  background-color: $border-color;
   border-radius: $radius;
 
   transition: background-color $transition-time $transition-effect;
 
-  @include border(darken($border-color, 10%));
+  @include border($border-color);
 
   &.active,
   &:hover {
     // color: currentColor;
-    background-color: $muted;
+    background-color: $white;
     outline: none;
   }
 
@@ -37,39 +37,8 @@
     }
   }
 
-  &_special {
-    color: $color-primary;
-
-    background-color: $white;
-    border: 1px solid $color-primary;
-    border-radius: $radius;
-
-    &:hover {
-      color: $white;
-
-      background-color: $color-primary;
-    }
-  }
-
-  &_warning-bordered {
-    color: $color-warning;
-
-    border: 2px solid $color-warning;
-    border-radius: $radius;
-
-    &:hover {
-      color: $white;
-
-      background-color: $color-warning;
-    }
-  }
-
-  // &_faded {
-  //   opacity: $opac
-  // }
-
   &_large {
-    padding: $space-sm $space-md;
+    padding: $space-md $space-lg;
   }
 
   &_small {
@@ -116,8 +85,8 @@
 
     &.active,
     &:hover {
-      color: $white;
-      background-color: darken($bg, 10%);
+      color: $bg;
+      background-color: $white;
     }
 
     &:focus {
