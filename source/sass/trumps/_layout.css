@@ -4,6 +4,14 @@
   display: flex;
   // flex-wrap: wrap;
 
+  &_direction-column {
+    flex-direction: column;
+  }
+
+  &_flex-1 {
+    flex: 1;
+  }
+
   &_justify-end {
     justify-content: flex-end;
   }

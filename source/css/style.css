@@ -4928,6 +4928,19 @@ select.f__control:not([size]):not([multiple]) {
   /* no grow and shrink */
 }
 
+.lf_direction-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lf_flex-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .lf_justify-end {
   -webkit-box-pack: end;
       -ms-flex-pack: end;

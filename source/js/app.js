@@ -37,7 +37,6 @@ function toggle(trigger, target, className) {
   toggle(mobileNavBtn, mobileNav, 'show');
 })(jQuery);(function ($) {
   $('.f__control-2').map(function (index, inputEl) {
-    console.log(inputEl);
     if (inputEl.value.trim() !== '') {
       inputEl.addClass('f__control-2_filled');
     }
