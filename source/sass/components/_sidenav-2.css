@@ -6,6 +6,7 @@
 
   font-size: $font-size-base;
   font-weight: $font-weight-bold;
+  line-height: 1;
   color: $muted;
 
   &::before {
@@ -22,11 +23,17 @@
 }
 
 .sidenav-2 {
-  &__title {
+  &__header-title {
     margin-bottom: 0;
 
-    line-height: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
+    @include sidenav-2-item;
+  }
+
+  &__title {
     @include sidenav-2-item;
   }
 
@@ -60,4 +67,8 @@
       display: block;
     }
   }
+}
+
+a.sidenav-2__header-title:hover { /* stylelint-disable-line */
+  color: $body-color;
 }

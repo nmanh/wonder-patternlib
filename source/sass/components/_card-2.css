@@ -1,11 +1,13 @@
 .card-2 {
   position: relative;
 
-  display: flex;
-  size: 112px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // size: 112px;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  size: 112px 0;
+  padding-bottom: 100%;
 
   background-color: $border-color;
   border: 1px solid $border-color;
@@ -23,10 +25,20 @@
   }
 
   &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
     margin-bottom: 0;
 
-    font-size: $font-size-h1;
+    font-size: $font-size-h3;
     color: $white;
+
+    transform: translate(-50%, -50%);
+
+    @media (--medium-up) {
+      font-size: $font-size-h1;
+    }
   }
 
   &__addon {
@@ -35,9 +47,28 @@
     bottom: 0;
     left: 0;
 
-    padding: $space-sm;
+    padding: $space-xs;
 
+    font-size: $font-size-h6;
     color: $body-color;
     text-align: center;
+
+    @media (--medium-up) {
+      padding: $space-sm;
+
+      font-size: $font-size-base;
+    }
+  }
+
+  @supports (display: grid) {
+    &_full-width {
+      size: 100% 0;
+    }
+  }
+
+  @supports not (display: grid) {
+    &_full-width {
+      width: 112px;
+    }
   }
 }

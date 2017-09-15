@@ -1,25 +1,20 @@
 @import "grid";
 @import "button";
 @import "form";
-@import "media";
+// @import "media";
 @import "app-header";
 @import "panel";
 @import "modal";
 @import "switch";
-
-/* @import "section-header"; */
-
+// @import "section-header";
 @import "nav-tab";
 @import "nav-tab-v";
 @import "nav-tab-h";
 @import "nav";
 @import "sidenav";
 @import "sidenav-2";
-
-/* @import "carousel"; */
-
-/* @import "carousel-2"; */
-
+// @import "carousel";
+// @import "carousel-2";
 @import "divider";
 @import "v-divider";
 @import "loader";

@@ -68,11 +68,12 @@
     padding: $space-sm $space-sm $space-sm $space-lg;
 
     font-size: $font-size-h5;
+    color: $muted;
 
-    background-color: $white;
+    background-color: $alabaster;
     border-radius: $radius;
 
-    @include border($border-color);
+    @include border($alabaster);
 
     &:hover,
     &:focus {
@@ -88,7 +89,7 @@
 
     padding: $space-xs $space-sm;
 
-    color: $color-primary;
+    color: $muted;
 
     background-color: transparent;
     border: 0;

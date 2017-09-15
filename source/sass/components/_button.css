@@ -33,7 +33,7 @@
     opacity: $opacity;
 
     &:hover {
-      background-color: inherit;
+      background-color: $border-color;
     }
   }
 
@@ -96,6 +96,8 @@
     &:disabled {
       &:hover,
       &:focus {
+        color: $white;
+
         background-color: $bg;
       }
     }

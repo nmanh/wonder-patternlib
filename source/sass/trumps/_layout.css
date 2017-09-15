@@ -57,3 +57,26 @@
 .clearfix {
   clear: fix;
 }
+
+/* Grid CSS */
+@supports (display: grid) {
+  .grid-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: $space-xs;
+    width: 100%;
+    max-width: 600px;
+
+    @media (--medium-up) {
+      grid-template-columns: repeat(5, 20%);
+      grid-gap: $space-md;
+    }
+  }
+}
+
+@supports not (display: grid) {
+  .grid-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

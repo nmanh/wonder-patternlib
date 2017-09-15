@@ -26,4 +26,12 @@
   .table {
     background-color: $white;
   }
+
+  &_responsive {
+    @media (--responsive-table) {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+    }
+  }
 }
