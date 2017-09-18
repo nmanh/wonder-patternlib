@@ -83,6 +83,7 @@ $space-xxlg: ($base * 16);
 @custom-media --medium-up (min-width: 640px);
 @custom-media --large-up (min-width: 1024px);
 @custom-media --responsive-table (max-width: 991px); // copy bootstrap 4
+@custom-media --card-3-breakpoint (min-width: 820px);
 
 /* 6. Border */
 $radius: 3px;

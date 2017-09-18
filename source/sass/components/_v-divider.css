@@ -1,5 +1,8 @@
 .v-divider {
-  size: 1px auto;
+  size: 1px 600px;
+  margin-top: $space-lg;
+  flex-grow: 0;
+  flex-shrink: 0;
 
   background-color: $border-color;
 }

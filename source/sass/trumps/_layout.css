@@ -59,24 +59,18 @@
 }
 
 /* Grid CSS */
-@supports (display: grid) {
-  .grid-1 {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-gap: $space-xs;
-    width: 100%;
-    max-width: 600px;
+.grid-1 {
+  width: 100%;
+  max-width: 660px;
+  clear: fix;
 
-    @media (--medium-up) {
-      grid-template-columns: repeat(5, 20%);
-      grid-gap: $space-md;
+  &__item {
+    float: left;
+    width: 16.8%;
+    margin-bottom: 4%;
+
+    &:not(:nth-child(5n)) {
+      margin-right: 4%;
     }
-  }
-}
-
-@supports not (display: grid) {
-  .grid-1 {
-    display: flex;
-    flex-wrap: wrap;
   }
 }

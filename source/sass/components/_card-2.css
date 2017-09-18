@@ -60,15 +60,7 @@
     }
   }
 
-  @supports (display: grid) {
-    &_full-width {
-      size: 100% 0;
-    }
-  }
-
-  @supports not (display: grid) {
-    &_full-width {
-      width: 112px;
-    }
+  &_full-width {
+    size: 100% 0;
   }
 }

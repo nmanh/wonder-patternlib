@@ -5,8 +5,8 @@
   padding: $space-md 0 $space-md $space-sm;
 
   font-size: $font-size-base;
-  font-weight: $font-weight-bold;
-  line-height: 1;
+  font-weight: $font-weight-normal;
+  line-height: 1.5;
   color: $muted;
 
   &::before {
@@ -42,6 +42,7 @@
 
     &:hover,
     &.active {
+      font-weight: $font-weight-bold;
       color: $body-color;
     }
   }
@@ -51,11 +52,12 @@
     margin-bottom: $space-md;
 
     // font-size: $font-size-h6;
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-normal;
     color: $muted;
 
     &:hover,
     &.active {
+      font-weight: $font-weight-bold;
       color: $body-color;
     }
   }

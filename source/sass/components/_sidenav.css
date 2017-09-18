@@ -10,7 +10,8 @@
   &__title {
     margin: 0;
 
-    font-weight: $font-weight-bold;
+    font-size: $font-size-h4;
+    font-weight: $font-weight-normal;
     color: $muted;
   }
 
