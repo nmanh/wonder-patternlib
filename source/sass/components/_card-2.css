@@ -16,7 +16,7 @@
     background-color: transparent;
 
     .card-2__title {
-      color: $body-color;
+      color: $black;
     }
 
     .card-2__addon {

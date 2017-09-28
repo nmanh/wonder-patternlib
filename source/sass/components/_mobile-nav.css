@@ -5,6 +5,7 @@
     display: block;
     padding: $space-sm 0;
 
+    font-weight: $font-weight-bold;
     color: $body-color;
 
     &:focus,

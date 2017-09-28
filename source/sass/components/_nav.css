@@ -6,8 +6,9 @@
   // background-color: $white;
 
   &__link {
+    position: relative;
     // flex: 1;
-    // padding: ($space-sm + 2) $space-xs $space-sm;
+    padding: 0 $space-md;
 
     font-weight: $font-weight-bold;
     line-height: 1;
@@ -16,13 +17,25 @@
 
     transition: color $transition-time $transition-effect;
 
-    &:not(:last-child) {
-      margin-right: $space-lg;
-    }
+    // &:not(:last-child) {
+    //   margin-right: $space-lg;
+    // }
 
     &.active,
     &:hover {
       color: $color-primary;
+
+      &::after {
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+
+        display: block;
+        size: 100% $space-xs;
+        content: "";
+
+        background-color: $color-primary;
+      }
     }
   }
 }

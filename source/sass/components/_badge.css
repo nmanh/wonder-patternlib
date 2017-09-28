@@ -43,7 +43,7 @@
   }
 
   &__dropdown-header {
-    padding: $space-sm $space-md;
+    padding: $space-md;
 
     // background-color: $alabaster;
     border-bottom: 1px solid $border-color;
@@ -51,7 +51,7 @@
 
   &__dropdown-item {
     display: flex;
-    padding: $space-sm;
+    padding: $space-md;
 
     color: $body-color;
 

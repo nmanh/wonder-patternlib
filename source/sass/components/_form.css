@@ -44,10 +44,17 @@
 
     /* input size */
 
-    &_large {
-      height: auto;
-      padding-top: $space-sm;
-      padding-bottom: $space-sm;
+    // &_large {
+    //   height: auto;
+    //   padding-top: $space-sm;
+    //   padding-bottom: $space-sm;
+    // }
+
+    &_small {
+      padding-top: $space-xs;
+      padding-bottom: $space-xs;
+
+      font-size: $font-size-h6;
     }
 
     /* input width */
@@ -72,7 +79,7 @@
     [type="checkbox"],
     [type="radio"] {
       position: absolute;
-      top: 2px;
+      top: 3px;
       left: 0;
     }
 

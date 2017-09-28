@@ -11,7 +11,8 @@
 }
 
 .txt-large {
-  font-size: $font-size-h4;
+  // font-size: $font-size-h4;
+  font-size: 1.14285714rem;
 }
 
 .txt-small {
@@ -125,6 +126,10 @@
 /* Word break */
 .txt-wrap {
   overflow-wrap: break-word;
+}
+
+.txt-break-word {
+  word-break: break-word;
 }
 
 /* Reset line height */

@@ -36,6 +36,10 @@
     align-items: stretch;
   }
 
+  &_self-middle {
+    align-self: center;
+  }
+
   // &_no-wrap {
   //   flex-wrap: nowrap;
   // }
@@ -73,4 +77,9 @@
       margin-right: 4%;
     }
   }
+}
+
+/* Table */
+.vertical-middle, td.vertical-middle, th.vertical-middle { /* stylelint-disable-line */
+  vertical-align: middle;
 }

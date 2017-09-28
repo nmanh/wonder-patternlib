@@ -26,7 +26,8 @@
     white-space: nowrap;
 
     background-color: lighten($color-primary, 65%);
-    border-top: 2px solid $border-color;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
 
     @include reset-default-list-style;
 
@@ -36,8 +37,12 @@
   }
 
   &__item {
+    font-weight: $font-weight-bold;
+    color: $muted;
+
+    &:hover,
     &.active {
-      font-weight: $font-weight-bold;
+      color: $color-primary;
     }
   }
 
@@ -45,6 +50,10 @@
     display: block;
     padding: $space-md;
 
-    color: $body-color;
+    color: unset;
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 }

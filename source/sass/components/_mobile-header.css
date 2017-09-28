@@ -2,11 +2,18 @@
   position: relative;
   z-index: $z-index-20;
 
-  padding: $space-md 10px;
+  padding: $space-md 20px;
 
   background-color: $white;
 
   @include header-shadow;
+
+  &__logo {
+    position: relative;
+    display: inline-block;
+
+    transform: translateY(6px);
+  }
 
   &__btn {
     float: right;

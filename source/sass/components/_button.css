@@ -90,6 +90,8 @@
     }
 
     &:focus {
+      color: $white;
+
       background-color: $bg;
     }
 
@@ -138,7 +140,7 @@
   &__item {
     display: block;
     width: 100%;
-    padding: $space-xs $space-md;
+    padding: $space-sm $space-md;
 
     color: $color-primary;
     text-align: left;
@@ -149,7 +151,7 @@
 
   &__divider {
     height: 1px;
-    margin: $space-xs -$space-xs;
+    margin: $space-sm 0;
 
     background-color: $border-color;
   }

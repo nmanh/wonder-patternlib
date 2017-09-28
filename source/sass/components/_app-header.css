@@ -1,18 +1,24 @@
 .app-header {
   &__logo {
-    color: $color-primary;
+    position: relative;
+    display: inline-block;
 
-    &:hover {
-      color: $color-primary;
-    }
+    transform: translateY(6px);
   }
 
-  &__main {
+  &__wrap {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: $z-index-max;
+  }
+
+  &__main {
+    position: relative;
+
+    display: flex;
+    align-items: center;
 
     background-color: $white;
 
@@ -37,6 +43,7 @@
     margin-top: $space-sm;
 
     background-color: $white;
+    border: 1px solid $border-color;
     border-radius: $radius;
 
     transform: translateX(-30%);
@@ -44,7 +51,7 @@
 
   &__suggest-item {
     display: block;
-    padding: $space-sm;
+    padding: $space-md;
 
     color: $body-color;
 
@@ -68,12 +75,12 @@
     padding: $space-sm $space-sm $space-sm $space-lg;
 
     font-size: $font-size-h5;
-    color: $muted;
+    // color: $muted;
 
     background-color: $alabaster;
     border-radius: $radius;
 
-    @include border($alabaster);
+    @include border($border-color);
 
     &:hover,
     &:focus {

@@ -18,12 +18,12 @@ $line-height-base: 1.4;
 $row-width: 1000px;
 
 /* 2. Colors */
-$emperor: #535353;
+$emperor: #333;
 $white: #fff;
 $white-2: #fdfdfd;
 $silver: #999;
 // $mercury: #e7e5e5;
-$alto: #ddd;
+$alto: #dbdbdb;
 $boulder: #757575;
 
 $jade: #1dd069;
@@ -35,6 +35,8 @@ $android-green: #8cc152;
 $jaffa: #f07736;
 $tan-hide: #f7945f;
 $alabaster: #f7f7f7;
+$dusty-gray: #999;
+$black: #000;
 
 $color-primary: $jade;
 $color-secondary: $emperor;

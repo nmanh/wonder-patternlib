@@ -1,10 +1,11 @@
 /* stylelint-disable */
-.mb-reset {
-  margin-bottom: 0;
-}
+// .mb-reset {
+//   margin-bottom: 0;
+// }
 
 // margin and padding values array
 $space-values : (
+  reset: 0,
   xs: $space-xs,
   sm: $space-sm,
   md: $space-md,
