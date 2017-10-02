@@ -62,7 +62,7 @@
   clear: fix;
 }
 
-/* Grid CSS */
+/* Custom Grid */
 .grid-1 {
   width: 100%;
   max-width: 660px;
@@ -75,6 +75,27 @@
 
     &:not(:nth-child(5n)) {
       margin-right: 4%;
+    }
+  }
+}
+
+.grid-2 {
+  &__item {
+    @media (--large-up) {
+      &:nth-child(3n + 1) {
+        padding-right: 40px;
+        // padding-left: 0;
+      }
+
+      &:nth-child(3n + 2) {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+
+      &:nth-child(3n) {
+        // padding-right: 0;
+        padding-left: 40px;
+      }
     }
   }
 }

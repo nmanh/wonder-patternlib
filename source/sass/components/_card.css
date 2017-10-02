@@ -8,6 +8,8 @@
 
   color: unset;
 
+  background-position: center center;
+  background-size: cover;
   border: 2px solid $boulder;
 
   &:hover {
@@ -19,11 +21,37 @@
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 0 $space-md $space-md;
+    padding: $space-sm $space-md $space-md;
+
+    background-color: rgba($white, 0.8);
 
     // @media (--large-up) {
     //   padding: 0 $space-md $space-lg $space-xlg;
     // }
+  }
+
+  &__sub-title {
+    font-size: $font-size-h6;
+    color: $muted;
+    text-transform: capitalize;
+
+    @media (--medium-up) {
+      font-size: $font-size-base;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+
+    font-size: $font-size-base;
+
+    @include text-ellipsis(1);
+
+    @media (--medium-up) {
+      max-height: ($line-height-base * $font-size-h4);
+
+      font-size: $font-size-h4;
+    }
   }
 
   &__addon {
@@ -33,7 +61,7 @@
 
     display: flex;
     flex-direction: column;
-    size: 70px;
+    size: 60px;
     align-items: center;
     justify-content: center;
 
@@ -50,9 +78,13 @@
   }
 
   &__addon-title {
-    font-size: $font-size-h1;
+    font-size: $font-size-h3;
     font-weight: $font-weight-bold;
     line-height: 1;
     color: $white;
+
+    @media (--medium-up) {
+      font-size: $font-size-h1;
+    }
   }
 }

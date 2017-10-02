@@ -21,6 +21,7 @@
 /* Box shadow */
 /* Reset default list style */
 /* Header shadow */
+/* Header shadow */
 /* stylelint-disable */
 @font-face {
   font-family: 'Noto Sans';
@@ -4459,6 +4460,8 @@ a.sidenav-2__header-title:hover {
   height: 0;
   padding-bottom: 100%;
   color: unset;
+  background-position: center center;
+  background-size: cover;
   border: 0.14286rem solid #757575;
 }
 
@@ -4471,7 +4474,42 @@ a.sidenav-2__header-title:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 0 1rem 1rem;
+  padding: 0.5rem 1rem 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card__sub-title {
+  font-size: 0.8rem;
+  color: #999;
+  text-transform: capitalize;
+}
+
+@media (min-width: 640px) {
+  .card__sub-title {
+    font-size: 1rem;
+  }
+}
+
+.card__title {
+  margin-bottom: 0;
+  font-size: 1rem;
+  display: -webkit-box;
+  /* stylelint-disable-line */
+  max-height: 1.4rem;
+  overflow: hidden;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  /* stylelint-disable-line */
+  -webkit-line-clamp: 1;
+  /* stylelint-disable-line */
+}
+
+@media (min-width: 640px) {
+  .card__title {
+    max-height: 1.75rem;
+    font-size: 1.25rem;
+  }
 }
 
 .card__addon {
@@ -4485,8 +4523,8 @@ a.sidenav-2__header-title:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 5rem;
-  height: 5rem;
+  width: 4.28571rem;
+  height: 4.28571rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4509,10 +4547,16 @@ a.sidenav-2__header-title:hover {
 }
 
 .card__addon-title {
-  font-size: 2.44141rem;
+  font-size: 1.5625rem;
   font-weight: 700;
   line-height: 1;
   color: #fff;
+}
+
+@media (min-width: 640px) {
+  .card__addon-title {
+    font-size: 2.44141rem;
+  }
 }
 
 .card-2 {
@@ -6041,7 +6085,7 @@ a.sidenav-2__header-title:hover {
   clear: both;
 }
 
-/* Grid CSS */
+/* Custom Grid */
 .grid-1:after {
   content: '';
   display: block;
@@ -6060,6 +6104,19 @@ a.sidenav-2__header-title:hover {
 
 .grid-1__item:not(:nth-child(5n)) {
   margin-right: 4%;
+}
+
+@media (min-width: 1024px) {
+  .grid-2__item:nth-child(3n + 1) {
+    padding-right: 2.85714rem;
+  }
+  .grid-2__item:nth-child(3n + 2) {
+    padding-right: 2.14286rem;
+    padding-left: 2.14286rem;
+  }
+  .grid-2__item:nth-child(3n) {
+    padding-left: 2.85714rem;
+  }
 }
 
 /* Table */
