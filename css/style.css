@@ -21,6 +21,8 @@
 /* Box shadow */
 /* Reset default list style */
 /* Header shadow */
+/* Header shadow */
+/* Backdrop */
 /* stylelint-disable */
 @font-face {
   font-family: 'Noto Sans';
@@ -3203,7 +3205,7 @@ select.f__control:not([size]):not([multiple]) {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 100;
+  z-index: 30;
 }
 
 .app-header__main {
@@ -4092,10 +4094,6 @@ a.sidenav-2__header-title:hover {
   background-color: #f7f7f7;
 }
 
-.well-2 {
-  background-color: #fdfdfd;
-}
-
 .wtag {
   display: inline-block;
   color: #999;
@@ -4459,6 +4457,8 @@ a.sidenav-2__header-title:hover {
   height: 0;
   padding-bottom: 100%;
   color: unset;
+  background-position: center center;
+  background-size: cover;
   border: 0.14286rem solid #757575;
 }
 
@@ -4471,7 +4471,48 @@ a.sidenav-2__header-title:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 0 1rem 1rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (min-width: 640px) {
+  .card__content {
+    padding: 0.5rem 1rem 1rem;
+  }
+}
+
+.card__sub-title {
+  font-size: 0.8rem;
+  color: #999;
+  text-transform: capitalize;
+}
+
+@media (min-width: 640px) {
+  .card__sub-title {
+    font-size: 1rem;
+  }
+}
+
+.card__title {
+  margin-bottom: 0;
+  font-size: 1rem;
+  display: -webkit-box;
+  /* stylelint-disable-line */
+  max-height: 1.4rem;
+  overflow: hidden;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  /* stylelint-disable-line */
+  -webkit-line-clamp: 1;
+  /* stylelint-disable-line */
+}
+
+@media (min-width: 640px) {
+  .card__title {
+    max-height: 1.75rem;
+    font-size: 1.25rem;
+  }
 }
 
 .card__addon {
@@ -4485,15 +4526,15 @@ a.sidenav-2__header-title:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 5rem;
-  height: 5rem;
+  width: 4.28571rem;
+  height: 4.28571rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #1dd069;
+  background-color: rgba(29, 208, 105, 0.9);
 }
 
 @media (min-width: 1024px) {
@@ -4509,10 +4550,16 @@ a.sidenav-2__header-title:hover {
 }
 
 .card__addon-title {
-  font-size: 2.44141rem;
+  font-size: 1.5625rem;
   font-weight: 700;
   line-height: 1;
   color: #fff;
+}
+
+@media (min-width: 640px) {
+  .card__addon-title {
+    font-size: 2.44141rem;
+  }
 }
 
 .card-2 {
@@ -4631,6 +4678,23 @@ a.sidenav-2__header-title:hover {
   max-width: 34.28571rem;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
+.hero {
+  background-color: rgba(248, 253, 168, 0.7);
+  background-image: url("/images/memphis-colorful.png"), url("/images/objects.png");
+  background-repeat: repeat, no-repeat;
+  background-position: top left, center bottom;
+}
+
 .txt-fz-h1 {
   font-size: 2.44141rem;
 }
@@ -4703,6 +4767,10 @@ a.sidenav-2__header-title:hover {
 
 .txt-body-color {
   color: #333;
+}
+
+.txt-gray {
+  color: #dbdbdb;
 }
 
 /* Text transform */
@@ -5959,6 +6027,14 @@ a.sidenav-2__header-title:hover {
   border-bottom: 0.07143rem solid #dbdbdb;
 }
 
+.bb-light {
+  border-bottom: 0.07143rem solid #dbdbdb;
+}
+
+.rounded {
+  border-radius: 0.21429rem;
+}
+
 /* Flex layout */
 .lf {
   display: -webkit-box;
@@ -6041,7 +6117,7 @@ a.sidenav-2__header-title:hover {
   clear: both;
 }
 
-/* Grid CSS */
+/* Custom Grid */
 .grid-1:after {
   content: '';
   display: block;
@@ -6060,6 +6136,19 @@ a.sidenav-2__header-title:hover {
 
 .grid-1__item:not(:nth-child(5n)) {
   margin-right: 4%;
+}
+
+@media (min-width: 1024px) {
+  .grid-2__item:nth-child(3n + 1) {
+    padding-right: 2.85714rem;
+  }
+  .grid-2__item:nth-child(3n + 2) {
+    padding-right: 2.14286rem;
+    padding-left: 2.14286rem;
+  }
+  .grid-2__item:nth-child(3n) {
+    padding-left: 2.85714rem;
+  }
 }
 
 /* Table */
@@ -6111,8 +6200,21 @@ a.sidenav-2__header-title:hover {
   bottom: 0;
 }
 
+.zindex-max {
+  position: relative;
+  z-index: 100;
+}
+
 .bg-white {
   background-color: #fff;
+}
+
+.bg-dark {
+  background-color: #757575;
+}
+
+.bg-primary {
+  background-color: #1dd069;
 }
 
 .slick-slide img {

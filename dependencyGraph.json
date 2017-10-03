@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1506484031585,
+  "timestamp": 1506941763765,
   "graph": {
     "options": {
       "directed": true,
@@ -311,6 +311,12 @@
         }
       },
       {
+        "v": "02-molecules/hero/hero.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "02-molecules/loaders/card-loader.mustache",
         "value": {
           "compileState": "clean"
@@ -538,6 +544,12 @@
       },
       {
         "v": "03-organisms/essay/essay~has-anwser.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-organisms/footer/footer.mustache",
         "value": {
           "compileState": "clean"
         }
