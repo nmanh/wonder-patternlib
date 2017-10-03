@@ -17,7 +17,7 @@
     "selector-max-id": 0,
     "selector-max-type": 0,
     "csstree/validator": {
-      "ignore": ["size", "position", "clear", "triangle"]
+      "ignore": ["size", "position", "clear", "triangle", "resolve"]
     },
     "plugin/no-unsupported-browser-features": [true, {
       "browsers": [

@@ -1,0 +1,6 @@
+.hero {
+  background-color: rgba($drover, 0.7);
+  background-image: url("/images/memphis-colorful.png"), url("/images/objects.png");
+  background-repeat: repeat, no-repeat;
+  background-position: top left, center bottom;
+}

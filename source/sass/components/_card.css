@@ -21,13 +21,13 @@
     right: 0;
     bottom: 0;
     left: 0;
-    padding: $space-sm $space-md $space-md;
+    padding: $space-sm;
 
-    background-color: rgba($white, 0.8);
+    background-color: rgba($white, 0.9);
 
-    // @media (--large-up) {
-    //   padding: 0 $space-md $space-lg $space-xlg;
-    // }
+    @media (--medium-up) {
+      padding: $space-sm $space-md $space-md;
+    }
   }
 
   &__sub-title {
@@ -65,7 +65,7 @@
     align-items: center;
     justify-content: center;
 
-    background-color: $color-primary;
+    background-color: rgba($color-primary, 0.9);
 
     @media (--large-up) {
       size: 94px;

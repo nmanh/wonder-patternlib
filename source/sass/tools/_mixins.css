@@ -36,3 +36,11 @@
   -webkit-box-orient: vertical; /* stylelint-disable-line */
   -webkit-line-clamp: $line; /* stylelint-disable-line */
 }
+
+/* Backdrop */
+@mixin backdrop($z-index: $z-index-20) {
+  position: fixed 0;
+  z-index: $z-index;
+
+  background-color: rgba($body-color, 0.7);
+}

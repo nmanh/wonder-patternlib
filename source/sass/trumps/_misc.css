@@ -30,3 +30,9 @@
     }
   }
 }
+
+.zindex-max {
+  position: relative;
+
+  z-index: $z-index-max;
+}

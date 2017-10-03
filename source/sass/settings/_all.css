@@ -35,8 +35,8 @@ $android-green: #8cc152;
 $jaffa: #f07736;
 $tan-hide: #f7945f;
 $alabaster: #f7f7f7;
-$dusty-gray: #999;
 $black: #000;
+$drover: #f8fda8;
 
 $color-primary: $jade;
 $color-secondary: $emperor;
@@ -101,6 +101,7 @@ $opacity: 0.6;
 // z-index-max = 100
 $z-index-10: 10;
 $z-index-20: 20;
+$z-index-30: 30;
 $z-index-max: 100;
 
 $btn-group-dropdown-menu: 160px;

@@ -11,7 +11,7 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: $z-index-max;
+    z-index: $z-index-30;
   }
 
   &__main {
@@ -119,9 +119,6 @@
   }
 
   &__backdrop {
-    position: fixed 0;
-    z-index: $z-index-20;
-
-    background-color: rgba($body-color, 0.7);
+    @include backdrop;
   }
 }

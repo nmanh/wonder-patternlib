@@ -75,6 +75,10 @@
   color: $body-color;
 }
 
+.txt-gray {
+  color: $alto;
+}
+
 /* Text transform */
 
 .txt-uppercase {
