@@ -1,9 +1,10 @@
-/* stylelint-disable */
+/* stylelint-disable plugin/no-unsupported-browser-features */
 
 .Select-control {
-  border-radius: $radius !important;
+  height: 40px !important;
 
   border: 1px solid $border-color !important;
+  border-radius: $radius !important;
 
   &:focus {
     border-color: $color-info;
@@ -15,4 +16,42 @@
 
 .Select-placeholder {
   color: #757575 !important;
+}
+
+.Select--multi .Select-value {
+  margin: 3px 4px !important;
+
+  font-size: unset !important;
+  line-height: unset !important;
+  color: $muted !important;
+
+  background-color: $white !important;
+  border-color: $border-color !important;
+}
+
+.Select--multi .Select-value-label {
+  padding: 4px 8px !important;
+  color: $body-color !important;
+}
+
+.Select--multi .Select-value-icon {
+  border-right-color: $border-color !important;
+}
+
+.Select--multi .Select-value-icon:hover {
+  color: $color-danger !important;
+  background-color: transparent !important;
+}
+
+.Select-option.is-focused {
+  background-color: $body-bg !important;
+}
+
+.Select--multi .Select-multi-value-wrapper {
+  display: table-cell !important;
+}
+
+.Select-placeholder,
+.Select--single > .Select-control .Select-value {
+  line-height: 40px;
 }

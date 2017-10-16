@@ -9,3 +9,7 @@
 .bg-primary {
   background-color: $color-primary;
 }
+
+.bg-milk {
+  background-color: $white-2;
+}

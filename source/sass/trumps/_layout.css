@@ -28,6 +28,10 @@
     align-items: center;
   }
 
+  &_align-bottom {
+    align-items: flex-end;
+  }
+
   &_align-start {
     align-items: flex-start;
   }

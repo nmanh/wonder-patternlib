@@ -89,7 +89,7 @@
 
   &__footer {
     clear: fix;
-    background-color: $border-color;
+    background-color: $body-bg;
     border-radius: 0 0 $radius $radius;
   }
 

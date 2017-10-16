@@ -1,6 +1,5 @@
 .v-divider {
   size: 1px auto;
-  min-height: 500px;
   flex-grow: 0;
   flex-shrink: 0;
   margin-left: 40px;

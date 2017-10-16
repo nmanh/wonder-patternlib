@@ -1,7 +1,8 @@
+// stylelint-disable selector-max-type
 .table {
   width: 100%;
   max-width: 100%;
-  background-color: $white;
+  // background-color: $white;
 
   th { /* stylelint-disable-line */
     text-align: left;
@@ -32,6 +33,12 @@
       display: block;
       width: 100%;
       overflow-x: auto;
+    }
+  }
+
+  &_hover {
+    tbody tr:hover {
+      background-color: $alabaster;
     }
   }
 }

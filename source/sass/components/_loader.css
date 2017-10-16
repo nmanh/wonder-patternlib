@@ -24,6 +24,12 @@
 
       border-radius: 50%;
     }
+
+    &_circle-small {
+      size: 40px;
+
+      border-radius: 50%;
+    }
   }
 }
 

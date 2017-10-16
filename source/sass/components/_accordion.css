@@ -1,0 +1,40 @@
+.acc {
+  &__section {
+    border: 1px solid $border-color;
+    border-radius: $radius;
+
+    &.open {
+      .acc__header {
+        border-bottom: 1px solid $border-color;
+      }
+
+      .acc__content {
+        display: block;
+      }
+    }
+  }
+
+  &__header {
+    display: block;
+    width: 100%;
+    padding: $space-md;
+
+    font-weight: $font-weight-bold;
+    color: $muted;
+    text-align: left;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: 0;
+  }
+
+  &__content {
+    display: none;
+    padding: $space-md 20px;
+
+    @media (--large-up) {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+}

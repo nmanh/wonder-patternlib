@@ -185,6 +185,38 @@
     transform-origin: 0 0;
     will-change: transform;
   }
+
+  &__control-3 {
+    padding: 0 $space-sm;
+
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px dashed $body-color;
+
+    &.error {
+      color: $color-danger;
+    }
+
+    &.success {
+      color: $color-primary;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__input-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    padding: $space-sm;
+
+    background-color: transparent;
+    border: 0;
+    transform: translateY(-50%);
+  }
 }
 
 select.f__control:not([size]):not([multiple]) { /* stylelint-disable-line */
