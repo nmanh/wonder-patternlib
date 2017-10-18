@@ -146,7 +146,7 @@ img {
 /* 7. Tables */
 table {
   border-collapse: collapse;
-  background-color: $body-bg;
+  // background-color: $body-bg;
 }
 
 /* 8. Forms */

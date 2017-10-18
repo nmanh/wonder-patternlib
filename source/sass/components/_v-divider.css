@@ -2,7 +2,7 @@
   size: 1px auto;
   flex-grow: 0;
   flex-shrink: 0;
-  margin-left: 40px;
+  margin-left: $space-lg;
 
   background-color: $border-color;
 }

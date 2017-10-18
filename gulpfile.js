@@ -35,6 +35,7 @@ gulp.task('styles', () => {
         replace: true,
         propWhiteList: [],
         selectorBlackList: [/^html$/],
+        unitPrecision: 10
       }),
       assets({
         loadPaths: ['images/'],

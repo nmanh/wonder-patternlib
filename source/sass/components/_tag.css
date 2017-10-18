@@ -22,7 +22,7 @@
 }
 
 .wtag-3 {
-  padding: 1px $space-xs;
+  padding: 1px 4.5px;
 
   font-size: $font-size-h6;
   color: $muted;

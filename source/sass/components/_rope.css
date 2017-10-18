@@ -8,7 +8,7 @@
 
   &__content-truncate {
     display: -webkit-box; /* stylelint-disable-line */
-    max-height: ($line-height-base * 5rem - 0.1rem);
+    max-height: ($line-height-base * 5rem);
     overflow: hidden;
 
     line-height: $line-height-base;
