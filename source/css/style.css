@@ -6326,7 +6326,7 @@ iframe {
   position: relative;
   height: 0;
   margin-bottom: 1.14286rem;
-  padding-bottom: 75%;
+  padding-bottom: 56.25%;
   overflow: hidden;
 }
 
@@ -6347,7 +6347,7 @@ iframe {
 
 .responsive-embed.widescreen,
 .flex-video.widescreen {
-  padding-bottom: 56.25%;
+  padding-bottom: 75%;
 }
 
 .hide {
@@ -13681,10 +13681,10 @@ a.sidenav-2__header-title:hover {
   outline: none;
 }
 
-/* stylelint-disable */
 .react-autosuggest__container {
   position: relative;
 }
+
 .react-autosuggest__container:after {
   content: '';
   display: block;
@@ -13714,24 +13714,26 @@ a.sidenav-2__header-title:hover {
   z-index: 10;
   width: 100%;
   margin-top: 0.5rem;
+  visibility: hidden;
+  background-color: #fff;
+  border-radius: 0.2142857143rem;
+  border: 0.0714285714rem solid #dbdbdb;
+}
+
+.react-autosuggest__suggestions-container--open {
+  visibility: visible;
 }
 
 .react-autosuggest__suggestions-list {
   padding: 0;
   margin: 0;
-  background-color: #fff;
-  border-radius: 0.2142857143rem;
-  border: 0.0714285714rem solid #dbdbdb;
 }
 
 .react-autosuggest__suggestion {
   padding: 0.5rem;
   list-style: none;
   cursor: pointer;
-}
-
-.react-autosuggest__suggestion:not(:last-of-type) {
-  border-bottom: 0.0714285714rem solid #dbdbdb;
+  border-top: 0.0714285714rem solid #dbdbdb;
 }
 
 .react-autosuggest__suggestion--highlighted {
@@ -13740,6 +13742,19 @@ a.sidenav-2__header-title:hover {
 
 .react-autosuggest__word-highlighted {
   font-weight: 700;
+}
+
+.react-autosuggest__btn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  background-color: transparent;
+  border: 0;
+}
+
+.react-autosuggest__btn:hover {
+  background-color: #dbdbdb;
 }
 
 /* stylelint-disable plugin/no-unsupported-browser-features */

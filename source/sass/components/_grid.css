@@ -3724,7 +3724,7 @@
   position: relative;
   height: 0;
   margin-bottom: 1.14286rem;
-  padding-bottom: 75%;
+  padding-bottom: 56.25%;
   overflow: hidden; }
   .responsive-embed iframe,
   .responsive-embed object,
@@ -3741,7 +3741,7 @@
     height: 100%; }
   .responsive-embed.widescreen,
   .flex-video.widescreen {
-    padding-bottom: 56.25%; }
+    padding-bottom: 75%; }
 
 .hide {
   display: none !important; }
