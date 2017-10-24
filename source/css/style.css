@@ -7374,23 +7374,38 @@ iframe {
   width: auto;
 }
 
-.f__checkbox, .f__radio {
-  position: relative;
-}
-
 .f__checkbox label, .f__radio label {
-  /* stylelint-disable-line */
-  padding-left: 1.5714285714rem;
+  position: relative;
+  padding-left: 1.4285714286rem;
   font-weight: 400;
   cursor: pointer;
+}
+
+.f__checkbox label::before, .f__radio label::before {
+  position: absolute;
+  top: 0.2857142857rem;
+  left: 0;
+  width: 0.9285714286rem;
+  height: 0.9285714286rem;
+  font-family: FontAwesome;
+  line-height: 0.8571428571rem;
+  color: #fff;
+  text-align: center;
+  content: "";
+  background-color: #fff;
+  border: 0.0714285714rem solid #999;
 }
 
 .f__checkbox [type="checkbox"],
 .f__checkbox [type="radio"], .f__radio [type="checkbox"],
 .f__radio [type="radio"] {
-  position: absolute;
-  top: 0.3571428571rem;
-  left: 0;
+  display: none;
+}
+
+.f__checkbox [type="checkbox"]:checked + label::before,
+.f__checkbox [type="radio"]:checked + label::before, .f__radio [type="checkbox"]:checked + label::before,
+.f__radio [type="radio"]:checked + label::before {
+  color: #999;
 }
 
 .f__checkbox.disabled, .f__radio.disabled {
@@ -7398,7 +7413,6 @@ iframe {
 }
 
 .f__checkbox.disabled label, .f__radio.disabled label {
-  /* stylelint-disable-line */
   cursor: not-allowed;
 }
 
@@ -7408,6 +7422,24 @@ iframe {
 
 .f__checkbox_inline:not(:first-child), .f__radio_inline:not(:first-child) {
   margin-left: 1rem;
+}
+
+.f__radio label::before {
+  font-size: 0.4285714286rem;
+  border-radius: 50%;
+}
+
+.f__radio [type="radio"]:checked + label::before {
+  content: "\f111";
+}
+
+.f__checkbox label::before {
+  font-size: 0.6428571429rem;
+  border-radius: 0.2142857143rem;
+}
+
+.f__checkbox [type="checkbox"]:checked + label::before {
+  content: "\f00c";
 }
 
 .f__help-text {
@@ -7457,12 +7489,10 @@ iframe {
 }
 
 .f__control-2 label {
-  /* stylelint-disable-line */
   margin-bottom: 0;
 }
 
 .f__control-2_filled ~ label {
-  /* stylelint-disable-line */
   -webkit-transform: translate3d(0, -1.5rem, 0) scale3d(0.8, 0.8, 1);
           transform: translate3d(0, -1.5rem, 0) scale3d(0.8, 0.8, 1);
 }
@@ -7477,7 +7507,6 @@ iframe {
 }
 
 .f__control-2_error ~ label {
-  /* stylelint-disable-line */
   color: #ff3b30;
 }
 
@@ -7528,7 +7557,6 @@ iframe {
 }
 
 select.f__control:not([size]):not([multiple]) {
-  /* stylelint-disable-line */
   height: 2.6428571429rem;
 }
 

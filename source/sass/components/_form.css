@@ -1,3 +1,5 @@
+// stylelint-disable selector-max-type, selector-no-qualifying-type, scss/selector-no-redundant-nesting-selector
+
 .f {
   width: 100%;
 
@@ -66,27 +68,44 @@
 
   &__checkbox,
   &__radio {
-    position: relative;
-
-    label { /* stylelint-disable-line */
-      padding-left: 22px;
+    label {
+      position: relative;
+      padding-left: 20px;
 
       font-weight: $font-weight-normal;
 
       cursor: pointer;
+
+      &::before {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        size: 13px;
+
+        font-family: FontAwesome;
+        line-height: 12px;
+        color: $white;
+        text-align: center;
+        content: "";
+
+        background-color: $white;
+        border: 1px solid $muted;
+      }
     }
 
     [type="checkbox"],
     [type="radio"] {
-      position: absolute;
-      top: 5px;
-      left: 0;
+      display: none;
+
+      &:checked + label::before {
+        color: $muted;
+      }
     }
 
     &.disabled {
       color: $muted;
 
-      label { /* stylelint-disable-line */
+      label {
         cursor: not-allowed;
       }
     }
@@ -97,6 +116,30 @@
       &:not(:first-child) {
         margin-left: $space-md;
       }
+    }
+  }
+
+  &__radio {
+    label::before {
+      font-size: 6px;
+
+      border-radius: 50%;
+    }
+
+    [type="radio"]:checked + label::before {
+      content: "\f111";
+    }
+  }
+
+  &__checkbox {
+    label::before {
+      font-size: 9px;
+
+      border-radius: $radius;
+    }
+
+    [type="checkbox"]:checked + label::before {
+      content: "\f00c";
     }
   }
 
@@ -147,13 +190,15 @@
       border-radius: $radius;
     }
 
-    label { /* stylelint-disable-line */
+    label {
       margin-bottom: 0;
     }
 
     &_filled {
-      & ~ label { /* stylelint-disable-line */
-        transform: translate3d(0, (-$space-md * $line-height-base), 0) scale3d(0.8, 0.8, 1);
+      & ~ label {
+        transform:
+          translate3d(0, (-$space-md * $line-height-base), 0)
+          scale3d(0.8, 0.8, 1);
       }
     }
 
@@ -166,7 +211,7 @@
         border-bottom-color: $color-danger;
       }
 
-      & ~ label { /* stylelint-disable-line */
+      & ~ label {
         color: $color-danger;
       }
     }
@@ -219,6 +264,6 @@
   }
 }
 
-select.f__control:not([size]):not([multiple]) { /* stylelint-disable-line */
+select.f__control:not([size]):not([multiple]) {
   height: ($font-size-base * $line-height-base + ($space-sm * 2) + 2);
 }
