@@ -10,6 +10,10 @@
   font-size: $font-size-h3;
 }
 
+.txt-fz-h2-res {
+  font-size: responsive $font-size-h3 $font-size-h2;
+}
+
 .txt-large {
   // font-size: $font-size-h4;
   font-size: 1.14285714rem;

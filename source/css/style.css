@@ -9130,6 +9130,22 @@ a.sidenav-2__header-title:hover {
   font-size: 1.5625rem;
 }
 
+.txt-fz-h2-res {
+  font-size: calc(1.5625rem + 0.390625 * ((100vw - 30rem) / 61.42857142857143));
+}
+
+@media screen and (min-width: 1280px) {
+  .txt-fz-h2-res {
+    font-size: 1.953125rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .txt-fz-h2-res {
+    font-size: 1.5625rem;
+  }
+}
+
 .txt-large {
   font-size: 1.14285714rem;
 }
