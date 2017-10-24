@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1507877115555,
+  "timestamp": 1508818713535,
   "graph": {
     "options": {
       "directed": true,
@@ -838,6 +838,12 @@
       },
       {
         "v": "04-utilities/layout/text~uppercase.json",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-utilities/texts/text-responsive.mustache",
         "value": {
           "compileState": "clean"
         }
