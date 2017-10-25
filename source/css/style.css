@@ -627,7 +627,7 @@ body {
   height: 100%;
   margin: 0;
   overflow-y: scroll;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans", "Courier New" sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -751,7 +751,7 @@ select,
 textarea,
 optgroup {
   font-size: 1rem;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans", "Courier New" sans-serif;
   font-weight: 400;
   line-height: inherit;
 }
@@ -13917,6 +13917,10 @@ a.sidenav-2__header-title:hover {
 .public-DraftEditor-content > div > div:last-child .public-DraftStyleDefault-block {
   /* stylelint-disable-line */
   margin-bottom: 0 !important;
+}
+
+.rt-nowrap > span {
+  white-space: nowrap;
 }
 
 @-webkit-keyframes fadeInDown {from {opacity: 0;-webkit-transform: translate3d(0, -100%, 0);transform: translate3d(0, -100%, 0);}to {opacity: 1;-webkit-transform: none;transform: none;}}
