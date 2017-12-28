@@ -87,18 +87,18 @@
   &__item {
     @media (--large-up) {
       &:nth-child(3n + 1) {
-        padding-right: 40px;
+        padding-right: ($base * 6);
         // padding-left: 0;
       }
 
       &:nth-child(3n + 2) {
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: ($base * 4);
+        padding-left: ($base * 4);
       }
 
       &:nth-child(3n) {
         // padding-right: 0;
-        padding-left: 40px;
+        padding-left: ($base * 6);
       }
     }
   }

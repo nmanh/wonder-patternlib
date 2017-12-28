@@ -28,6 +28,14 @@
   border-bottom: 1px solid $alto;
 }
 
+.bb-gray {
+  border-bottom: 1px solid $gallery;
+}
+
 .rounded {
   border-radius: $radius;
+}
+
+.rounded-lg {
+  border-radius: $radius-lg;
 }

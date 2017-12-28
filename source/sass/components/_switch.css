@@ -24,7 +24,7 @@
 
     cursor: pointer;
     background-color: $muted;
-    border-radius: $radius-big;
+    border-radius: $radius-md;
     box-shadow: inset 1px 1px 1px 1px rgba($body-color, 0.4);
 
     transition: background-color $transition-time $transition-effect;

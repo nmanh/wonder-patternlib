@@ -1,0 +1,10 @@
+.c-scrollbar {
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba($body-color, 0.2);
+  }
+}

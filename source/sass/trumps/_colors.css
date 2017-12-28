@@ -13,3 +13,7 @@
 .bg-milk {
   background-color: $white-2;
 }
+
+.bg-gray {
+  background-color: $gallery;
+}

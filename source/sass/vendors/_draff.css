@@ -1,3 +1,4 @@
+// stylelint-disable selector-max-type, selector-max-compound-selectors
 .rdw-editor-toolbar {
   border-color: $border-color !important;
 }
@@ -54,9 +55,13 @@
 }
 
 .public-DraftStyleDefault-block {
-  margin: 0 0 ($font-size-base * $line-height-base) !important; /* stylelint-disable-line */
+  margin: 0 0 ($font-size-base * $line-height-base) !important;
 }
 
-.public-DraftEditor-content > div > div:last-child .public-DraftStyleDefault-block { /* stylelint-disable-line */
+.public-DraftEditor-content > div > div:last-child .public-DraftStyleDefault-block {
   margin-bottom: 0 !important;
+}
+
+.DraftEditor-editorContainer {
+  z-index: 0 !important;
 }

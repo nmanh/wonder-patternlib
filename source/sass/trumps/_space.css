@@ -34,10 +34,10 @@ $grid-breakpoints: (
   // Medium screen / tablet
   medium: 640px,
   // Large screen / desktop
-  large: 1024px,
+  large: 960px,
   // Extra large screen / wide desktop
-  xlarge: 1200px,
-  xxlarge: 1440px,
+  xlarge: 1280px,
+  xxlarge: 1600px,
 );
 
 // main function definition

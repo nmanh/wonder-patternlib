@@ -1,3 +1,4 @@
+@import "avatar";
 @import "text";
 @import "list";
 @import "img";
@@ -7,3 +8,4 @@
 @import "visibilities";
 @import "misc";
 @import "colors";
+@import "scrollbar";

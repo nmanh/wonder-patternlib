@@ -4,7 +4,7 @@ function toggle(trigger, target, className) {
   });
 }
 
-(function ($) {
+;(function ($) {
   $('#carousel-2').slick({
     arrows: false,
     slidesToShow: 1,
@@ -53,5 +53,12 @@ function toggle(trigger, target, className) {
     if (ev.target.value.trim() === '') {
       $(ev.target).removeClass('f__control-2_filled');
     }
+  }
+})(jQuery);(function ($) {
+  var sidenavTransition = $('#sidenav-transition');
+  var toggleSidenav = $('.toggle-sidenav');
+
+  if (sidenavTransition) {
+    toggle(toggleSidenav, sidenavTransition, 'show');
   }
 })(jQuery);

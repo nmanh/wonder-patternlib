@@ -3,7 +3,7 @@
 
   &::after {
     position: absolute;
-    top: 2px;
+    top: 0;
     right: 0;
     bottom: 0;
     width: ($base * 4);
@@ -13,6 +13,10 @@
     background-image: linear-gradient(to left, lighten($color-primary, 65%), rgba($muted, 0));
     opacity: 1;
     transition: opacity $transition-time $transition-effect;
+
+    @media (--large-up) {
+      background-image: none;
+    }
   }
 
   &.end-list::after {

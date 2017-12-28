@@ -12,7 +12,7 @@
   &__footer {
     padding: $space-sm $space-md;
 
-    background-color: $border-color;
+    background-color: $body-bg;
   }
 
   &__title {
@@ -30,7 +30,7 @@
 
   &_special {
     // background-color: $alabaster;
-    background-color: #fdfdfd;
+    background-color: $white-2;
 
     @include border($alabaster);
 
@@ -44,9 +44,9 @@
 
   &_special-border {
     // background-color: $alabaster;
-    background-color: #fdfdfd;
+    background-color: $white-2;
 
-    @include border($border-color);
+    @include border($gallery);
 
     .panel__heading {
       text-transform: uppercase;

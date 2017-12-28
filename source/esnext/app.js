@@ -4,7 +4,7 @@ function toggle(trigger, target, className) {
   })
 }
 
-(function ($) {
+;(function($) {
   $('#carousel-2').slick({
     arrows: false,
     slidesToShow: 1,
@@ -20,7 +20,7 @@ function toggle(trigger, target, className) {
     asNavFor: $('#carousel-2')
   })
 })(jQuery)
-;(function ($) {
+;(function($) {
   const activate = $('#activate')
   const content = $('#content')
   const activate2 = $('#s2-activate')
@@ -29,18 +29,18 @@ function toggle(trigger, target, className) {
   toggle(activate, content, 'active')
   toggle(activate2, content2, 'active')
 })(jQuery)
-;(function ($) {
+;(function($) {
   const btnMenu = $('.st__menu-toggle')
   const sidebarTransition = $('.st')
   toggle(btnMenu, sidebarTransition, 'show')
 })(jQuery)
-;(function ($) {
+;(function($) {
   const mobileNavBtn = $('.app-mobile-header__btn')
   const mobileNav = $('.app-mobile-header__list')
   toggle(mobileNavBtn, mobileNav, 'show')
 })(jQuery)
-;(function ($) {
-  $('.f__control-2').map(function (index, inputEl) {
+;(function($) {
+  $('.f__control-2').map(function(index, inputEl) {
     if (inputEl.value.trim() !== '') {
       inputEl.addClass('f__control-2_filled')
     }
@@ -57,5 +57,13 @@ function toggle(trigger, target, className) {
     if (ev.target.value.trim() === '') {
       $(ev.target).removeClass('f__control-2_filled')
     }
+  }
+})(jQuery)
+;(function($) {
+  const sidenavTransition = $('#sidenav-transition')
+  const toggleSidenav = $('.toggle-sidenav')
+
+  if (sidenavTransition) {
+    toggle(toggleSidenav, sidenavTransition, 'show')
   }
 })(jQuery)
